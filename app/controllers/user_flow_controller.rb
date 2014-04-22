@@ -14,18 +14,18 @@ class UserFlowController < ApplicationController
   def products
   end
 
-  def order-details
+  def order_details
   end
 
   def confirmation
   end
 
-  def view-quotes
+  def view_quotes
   end
 
-  def bella-flora-quote
+  def bella_flora_quote
   end
 
-  def bella-flora-details
+  def bella_flora_details
   end
 end

@@ -1,19 +1,23 @@
 RoseBid::Application.routes.draw do
+ 
+  get "landing_pages/indexa"
+  get "landing_pages/indexb"
   get "user_flow/login"
   get "user_flow/eventsel"
   get "user_flow/pictures"
   get "user_flow/profile"
   get "user_flow/products"
-  get "user_flow/order-details"
+  get "user_flow/order_details"
   get "user_flow/confirmation"
-  get "user_flow/view-quotes"
-  get "user_flow/bella-flora-quote"
-  get "user_flow/bella-flora-details"
+  get "user_flow/view_quotes"
+  get "user_flow/bella_flora_quote"
+  get "user_flow/bella_flora_details"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root "landing_pages/indexa"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

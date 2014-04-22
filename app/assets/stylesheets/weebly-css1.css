@@ -1,0 +1,52 @@
+
+.wsite-elements.wsite-not-footer h2, 
+.wsite-elements.wsite-not-footer .product-long .product-title, 
+.wsite-elements.wsite-not-footer .product-large .product-title, 
+.wsite-elements.wsite-not-footer .product-small .product-title, 
+#wsite-content h2, 
+#wsite-content .product-long .product-title, 
+#wsite-content .product-large .product-title, 
+#wsite-content .product-small .product-title, 
+.blog-sidebar h2 {
+	line-height:45px !important;
+}
+
+#wsite-title {
+	font-size:23px !important;
+}
+
+.wsite-not-footer h2.wsite-content-title a, 
+.wsite-not-footer .paragraph a, 
+.wsite-not-footer blockquote a, 
+#blogTable .blog-sidebar a, 
+#blogTable .blog-comments a, 
+#blogTable .blog-comments-bottom a, 
+#wsite-com-store a, 
+#wsite-com-product-gen a, 
+#wsite-com-product-tab a {
+	color:#e34144 !important;
+}
+
+
+.wsite-not-footer h2.wsite-content-title a:hover, 
+.wsite-not-footer .paragraph a:hover, 
+.wsite-not-footer blockquote a:hover, 
+#blogTable .blog-sidebar a:hover, 
+#blogTable .blog-comments a:hover, 
+#blogTable .blog-comments-bottom a:hover, 
+#wsite-com-store a:hover, 
+#wsite-com-product-gen a:hover, 
+#wsite-com-product-tab a:hover {
+	color:#e77 !important;
+}
+
+.wsite-background {
+	background-image: url('./img/wedding_flower_banner_short_2.jpg') !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% 50% !important;
+	background-size: cover !important;
+}
+
+body.wsite-background {
+	background-attachment: fixed !important;
+}

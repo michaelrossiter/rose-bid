@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RoseBid</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<title>Rose Bid - Find the Perfect Flowers for Your Wedding</title>
+	<meta name='description' content='We match you with amazing florists for your wedding needs.' />
+	<meta name='keywords' content='wedding, flowers, value, quality, bouquets' />
+	<meta property='og:site_name' content='Rose Bid - Find the Perfect Flowers for Your Wedding' />
+	<meta property='og:title' content='Rose Bid Home' />
+	<meta property='og:description' content='We are a service that matches you to reputable florists for your wedding needs.' />
+	<meta property='og:url' content='http://www.rose-bid.com/' />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-49645908-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+
+<!-- START CSS/JS Files-->
+  	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
+<!-- START FONT Files-->
+	<link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<!-- END FONT Files-->
+
 </head>
-<body>
 
-<%= yield %>
+       
 
-</body>
+<!-- START YIELD -->
+
+		<%= yield %>
+			
+<!-- END YIELD -->
+
 </html>
