@@ -1,4 +1,14 @@
 RoseBid::Application.routes.draw do
+  get "user_flow/login"
+  get "user_flow/eventsel"
+  get "user_flow/pictures"
+  get "user_flow/profile"
+  get "user_flow/products"
+  get "user_flow/order-details"
+  get "user_flow/confirmation"
+  get "user_flow/view-quotes"
+  get "user_flow/bella-flora-quote"
+  get "user_flow/bella-flora-details"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
