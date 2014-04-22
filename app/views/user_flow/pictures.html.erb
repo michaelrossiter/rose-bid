@@ -1,2 +1,496 @@
-<h1>UserFlow#pictures</h1>
-<p>Find me in app/views/user_flow/pictures.html.erb</p>
+<body class='pic-page  wsite-theme-light'>
+	<div id="nav-wrap">
+		<div class="container">
+			<table id="header">
+				<tr>
+					<td id ="logo"><!--{logo}-->
+						<a href="index.html"><span class="stalemate">R</span><span id="title-text2">ose</span><span class="cinzel">Bid</span></a>
+						<!--<img src="/files/theme/title-icon-4.png" id="title-icon">-->
+						<span id="subtitle-text">Find the Perfect Flowers for Your Wedding</span>
+					</td>
+						<ul class='wsite-menu-default'>
+							<li id='pg925725211574932156'><%= link_to "Home", root_path %></li>
+							<li id='pg925725211574932156'><%= link_to "Sign Up", user_flow_login_path %></li>
+							<li id='pg925725211574932156'><%= link_to "Log In", user_flow_login_path %></li>
+						</ul>
+					</td>
+					<!--<td class="search">{search}</td>-->
+				</tr>
+			</table>
+		</div><!-- end container -->
+	</div><!-- end nav-wrap -->
+      
+	<div class="wsite-backgroundpreload">  
+	<div class="banner-wrap wsite-background2">
+		<div id="banner">
+			<!-- Modified <h2>{headline:text global="false"}</h2> 
+				 <p>{headline-paragraph:text global="false"}</p>
+				 <div class="button-wrap">{loginaction:button global="false"}</div> -->
+			<div id="home-page-enter-border">
+
+				<div id="home-page-enter">	
+					<div class="pgtitle"><h2>Ceremony</h2><div class="fancy-font-header"><h2>Style</h2></div></div>
+					<p>Discover your unique wedding style. We have put together a portfolio of fabulous wedding inspiration and beautiful photographs which we hope will inspire you. Tell us which pics you love so we can build a flower profile that fits your distinct wedding style. We can get a sense of your style with <b><i>ten photographs</b></i>, but remember, the more pics you rate, the more accurate we can be. </p>
+					
+					
+					<div class="picdone"><a class="wsite-button wsite-button-large wsite-button-normal" href="profile.html" >
+									<span class="wsite-button-inner">I'm Done</span></a>
+					</div>
+					
+										
+					
+					<div class="startbox">
+					<div style="height: 40px; overflow: hidden; width: 100%;"></div>
+					<a class="wsite-button wsite-button-large wsite-button-normal" href="#start" >
+			<span class="wsite-button-inner">Discover My Style</span>
+			
+		</a><div style="height: 40px; overflow: hidden; width: 100%;"></div>
+		
+					</div>
+			</div>
+			
+		</div>
+		
+		<div class="selPic"><a href="#matched"><i class="fa fa-thumbs-up fa-6"></i></a></div>
+		<div class="selPicNo"><a href="#notmatched"><i class="fa fa-thumbs-down fa-6"></i> </a></div>
+		<!--<div class="picstart"><a class="wsite-button wsite-button-large wsite-button-normal" href="#start" >
+			<span class="wsite-button-inner">Let's Get Started</span>
+		</a></div>-->
+		
+		<div id="banner-bottom">
+			<!-- Modified <h2>{headline:text global="false"}</h2> 
+				 <p>{headline-paragraph:text global="false"}</p>
+				 <div class="button-wrap">{loginaction:button global="false"}</div> -->
+			<div id="home-page-enter-border">
+
+				<div id="home-page-enter">	
+					<!--<h2>Ceremony</h2><div class="fancy-font-header"><h2>Style</h2></div>-->
+					
+					<div class = "cloud"></div>
+					<div class="bottomtbltop">
+						<div class="bottomtbl">	
+							<div class ="bottomtblcell" id="progressbottomsize">
+								<div class="uk-progress uk-progress-striped uk-progress-danger">
+									<div class="uk-progress-bar" style="width: 0%;"></div>
+								</div> 
+							</div>
+							<div class="bottomtblcell">
+								<!--<div class="picdone"><a class="wsite-button wsite-button-large wsite-button-normal" href="profile.html" >
+									<span class="wsite-button-inner">I'm Done Choosing</span></a>
+								</div>-->
+																
+								
+							</div>
+						</div>
+					</div>
+					
+					
+								
+								
+					<script>
+					  jQuery(function($)  {
+					  
+						  window.photoIndex = 0;
+						  maxImgs = 35;
+						  
+						  $(document).ready(function(){
+							$('.wsite-background2').css("background-image", "url(img/wedding_flower_bannder_short_2.jpg)"); 
+							$('.wsite-backgroundpreload').css("background-image", "url(img/pic"+(window.photoIndex)+".jpg)"); 
+							$('.selPic').hide();
+							$('.selPicNo').hide();
+							$('.picdone').hide();
+							$('#banner-bottom').hide();
+							
+							/*imgTagArray = new Array();
+							for (val i = 1; i<= maxImgs; i++){
+							
+								imgTagArray[i] = new Array();
+							}*/
+							
+							window.keyWords = {
+								Beach: 0,
+								Minimalist: 0,
+								Outdoor: 0,
+								Canopy: 0,
+								Fun: 0,
+								Modern: 0,
+								Chic: 0, 
+								Barn: 0,
+								Church: 0,
+								Traditional: 0,
+								Classic: 0,
+								Extravagent: 0,
+								Romantic: 0,
+								Roses: 0,
+								Modern: 0,
+								Orchid: 0,
+								Unique: 0,
+								Contemporary: 0,
+								Ornate: 0,
+								Mountains: 0,
+								Whimsy: 0,
+								Playful: 0,
+								Colorful: 0,
+								Luxurious: 0,
+								Rustic: 0,
+								Cowboy: 0,
+								Tropical: 0,
+								Pink: 0,
+								Tulips: 0,
+								Winter: 0,
+								Ceremony: 0
+							};
+
+							$('.wsite-background2').css("background-image", "url(/files/theme/wedding_flower_banner_short_2.jpg)");
+							});	
+
+						  $('a[href="#notmatched"]').on("click", function (e){
+							  e.preventDefault();
+							  advance();
+							  
+						  });
+						  
+						  $('a[href="profile.html"]').on("click", function (e){
+						  
+							  e.preventDefault();
+							  window.location='profile.html';
+							  
+						  });
+						  
+						  
+						  
+						  $('a[href="#start"]').on("click", function (e){
+							  //.console.log("yes");
+							  e.preventDefault();
+							   $('.startbox').hide();
+							   $('.pgtitle').hide();
+							   $('.selPic').show();
+								$('.selPicNo').show();
+								$('#banner-bottom').show();
+								advance();   
+							  
+						  });
+						  
+						  
+						  
+						  
+						  
+						  
+						  
+			
+						 $('a[href="#matched"]').on("click", function (e){
+							  e.preventDefault();
+							  currentPhotoIndex = window.photoIndex;
+							  //console.log(currentPhotoIndex)
+							  if(currentPhotoIndex === 7){
+								  window.keyWords.Beach++;
+								  window.keyWords.Minimalist++;
+							  }
+							  else if(currentPhotoIndex === 11){
+								  window.keyWords.Beach++;
+								  window.keyWords.Outdoor++;
+								  window.keyWords.Canopy++;
+							  }
+							 else  if(currentPhotoIndex === 19){
+								  window.keyWords.Beach++;
+								  window.keyWords.Outdoor++;
+								  window.keyWords.Fun++;
+							  }
+							  else if(currentPhotoIndex === 27){
+								  window.keyWords.Beach++;
+								  window.keyWords.Outdoor++;
+								  window.keyWords.Modern++;
+							  }
+							  else if(currentPhotoIndex === 28){
+								  window.keyWords.Beach++;
+								 
+							  }
+							  else if(currentPhotoIndex === 29){
+								  window.keyWords.Beach++;
+								 
+							  }
+							  else if(currentPhotoIndex === 30){
+								  window.keyWords.Beach++;
+								 
+							  }
+							  else if(currentPhotoIndex === 18){
+								  window.keyWords.Chic++;
+								  window.keyWords.Outdoor++;
+								  window.keyWords.Barn++;
+							  }
+							  else if(currentPhotoIndex === 12){
+								  window.keyWords.Church++;
+								  window.keyWords.Traditional++;
+								  
+							  }
+							   else if(currentPhotoIndex === 13){
+								  window.keyWords.Church++;
+								  window.keyWords.Traditional++;
+								  
+							  }
+							  else  if(currentPhotoIndex === 31){
+								  window.keyWords.Classic++;
+								  window.keyWords.Extravagent++;
+								  window.keyWords.Romantic++;
+								  
+							  }
+							  else if(currentPhotoIndex === 24){
+								  window.keyWords.Classic++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 23){
+								  window.keyWords.Classic++;
+								  window.keyWords.Outdoor++;
+								  window.keyWords.Roses++;
+							  }
+							  else if(currentPhotoIndex === 26){
+								  window.keyWords.Modern++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 20){
+								  window.keyWords.Orchid++;
+								  window.keyWords.Unique++;
+								  window.keyWords.Contemporary++;
+							  }
+							  else if(currentPhotoIndex === 3){
+								  window.keyWords.Ornate++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 5){
+								  window.keyWords.Canopy++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 2){
+								  
+								  window.keyWords.Mountains++;
+								  window.keyWords.Outdoor++;
+								  window.keyWords.Minimalist++;
+								  
+								 // console.log(window.keyWords.Minimalist);
+							  }
+							  else if(currentPhotoIndex === 8){
+								  window.keyWords.Mountains++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 6){
+								  window.keyWords.Whimsy++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 15){
+								  window.keyWords.Whimsy++;
+								  window.keyWords.Playful++;
+								  window.keyWords.Colorful++;
+							  }
+							  else if(currentPhotoIndex === 9){
+								  window.keyWords.Romantic++;
+								  window.keyWords.Canopy++;
+							  }
+							  else if(currentPhotoIndex === 22){
+								  window.keyWords.Romantic++;
+								  window.keyWords.Luxurious++;
+							  }
+							  else if(currentPhotoIndex === 10){
+								  window.keyWords.Romantic++;
+								  window.keyWords.Canopy++;
+								  window.keyWords.Ornate++;
+							  }
+							  else if(currentPhotoIndex === 21){
+								  window.keyWords.Romantic++;
+								  window.keyWords.Roses++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 14){
+								  window.keyWords.Romantic++;
+								  window.keyWords.Roses++;
+								  window.keyWords.Traditional++;
+							  }
+							  else if(currentPhotoIndex === 16){
+								  window.keyWords.Romantic++;
+								  window.keyWords.Roses++;
+								  window.keyWords.Traditional++;
+							  }
+							  else if(currentPhotoIndex === 33){
+								  window.keyWords.Rustic++;
+								  window.keyWords.Barn++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 34){
+								  window.keyWords.Rustic++;
+								  window.keyWords.Cowboy++;
+							  }
+							  else if(currentPhotoIndex === 25){
+								  window.keyWords.Rustic++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 32){
+								  window.keyWords.Rustic++;
+								  window.keyWords.Outdoor++;
+							  }
+							  else if(currentPhotoIndex === 35){
+								  window.keyWords.Rustic++;
+							  }
+							  else if(currentPhotoIndex === 4){
+								  window.keyWords.Tropical++;
+								  window.keyWords.Outdoor++;
+								  window.keyWords.Pink++;
+							  }
+							  else if(currentPhotoIndex === 17){
+								  window.keyWords.Tulips++;
+								  window.keyWords.Contemporary++;
+								  window.keyWords.Unique++;
+							  }
+							  else if(currentPhotoIndex === 1){
+								  window.keyWords.Winter++;
+								  window.keyWords.Ceremony++;
+								  window.keyWords.Romantic++;
+							  }
+							  
+							  advance();
+							  
+							  
+							  
+							 // console.log(window.keyWords);
+							  
+								//console.log(d3.map(window.keyWords));
+								
+								var words = [{"text":"Beach"},
+											 {"text":"Minimalist"},
+											 {"text":"Outdoor"},
+											 {"text":"Canopy"},
+											 {"text":"Fun"},
+											 {"text":"Modern"},
+											 {"text":"Chic"},
+											 {"text":"Barn"},
+											 {"text":"Church"},
+											 {"text":"Traditional"},
+											 {"text":"Classic"},
+											 {"text":"Extravagent"},
+											 {"text":"Romantic"},
+											 {"text":"Roses"},
+											 {"text":"Orchid"},
+											 {"text":"Unique"},
+											 {"text":"Contemporary"},
+											 {"text":"Ornate"},
+											 {"text":"Mountains"},
+											 {"text":"Whimsy"},
+											 {"text":"Playful"},
+											 {"text":"Colorful"},
+											 {"text":"Luxurious"},
+											 {"text":"Rustic"},
+											 {"text":"Cowboy"},
+											 {"text":"Tropical"},
+											 {"text":"Pink"},
+											 {"text":"Tulips"},
+											 {"text":"Winter"},
+											 {"text":"Ceremony"}
+										]
+										
+								var i = 0;
+								for (var key in window.keyWords) {
+									//console.log(key);
+									currentVal = window.keyWords[key];
+									if (currentVal === 0)  words[i].size=0;
+									else if (currentVal === 1) words[i].size=14;
+									else words[i].size=14 + 4*currentVal;
+								
+								 i++;
+								}
+								
+								/*for (var i = 0; i < words.length; i++) {
+									 words[i].size = 10 + Math.random() * 90;
+								}*/
+								
+								//console.log(words);
+								
+								var fill = d3.scale.category20();
+								
+								d3.layout.cloud().size([1000, 100])
+								
+								
+								
+								
+								.words(words)
+							  
+							  //.padding(5)
+							  .rotate(function() { return ~~(Math.random() * 2) * 90; })
+							  .font("Impact")
+							  .fontSize(function(d) { return d.size; })
+							  .on("end", draw)
+							  .start();
+							  
+							  function draw(words) {
+							  //console.log(words);
+							  d3.select("svg") .remove();
+							d3.select('div[class="cloud"]').append("svg")
+								.attr("width", 1000)
+								.attr("height", 100)
+							  .append("g")
+								.attr("transform", "translate(500,50)")
+								//.enter().remove("text")
+							  .selectAll("text")
+								.data(words)
+							  .enter().append("text")
+								.style("font-size", function(d) { return d.size + "px"; })
+								.style("font-family", "Impact")
+								.style("fill", function(d, i) { return fill(i); })
+								.attr("text-anchor", "middle")
+								.attr("transform", function(d) {
+								  return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+								})
+								.text(function(d) { return d.text; });
+						  }
+							  
+							
+							  
+
+						  
+
+							  
+						  });
+			
+							function advance(){
+								
+								currentPhotoIndex = window.photoIndex
+								if (currentPhotoIndex != maxImgs){
+								  $('.wsite-background2').css("background-image", "url(/files/theme/pic"+(currentPhotoIndex+1)+".jpg)");
+								  if (currentPhotoIndex<maxImgs-1){
+									  $('.wsite-backgroundpreload').css("background-image", "url(/files/theme/pic"+(currentPhotoIndex+2)+".jpg)"); 
+								  }
+								  window.photoIndex=currentPhotoIndex+1;
+								   $(".uk-progress-bar").text(currentPhotoIndex+" Photos");
+								  
+								  $(".uk-progress-bar").css("width", ((currentPhotoIndex+1)/maxImgs*100) +"%");
+								  if ((currentPhotoIndex+1)===11){
+									// console.log("here");
+									 //$('.uk-progress uk-progress-striped uk-progress-danger').className="uk-progress uk-progress-striped";
+									 $('.uk-progress').removeClass( "uk-progress-danger" );
+									 //$('.picdone').css("display","auto");
+									 $('.picdone').show();
+									 $('.picdone').slideDown("medium");
+ 
+								  }
+								  
+								  //$(".uk-progress-bar").css.("width":((currentPhotoIndex+1)/maxImgs*100)+"%");
+								}
+								else{
+									window.location = 'profile.html';
+								}
+								// if > 20 imgs, show done 
+							}
+						 
+						 
+
+
+
+
+						});
+					</script>
+					
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	</div>
+</body>

@@ -1,5 +1,7 @@
 RoseBid::Application.routes.draw do
  
+  root 'landing_pages#indexa'
+
   get "landing_pages/indexa"
   get "landing_pages/indexb"
   get "user_flow/login"
@@ -17,8 +19,7 @@ RoseBid::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root "landing_pages/indexa"
-
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
