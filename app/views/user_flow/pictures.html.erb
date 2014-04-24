@@ -1,46 +1,41 @@
-<body class='pic-page  wsite-theme-light'>
+<body class='pic-page wsite-theme-light wsite-page-pictures'>
 
 <!-- START Navbar-->
 	<%= render file: "/layouts/_navbar.html.erb" %>
 <!-- END Navbar-->
       
-	<div class="wsite-backgroundpreload">  
-	<div class="banner-wrap wsite-background2">
+	<div class="banner-wrap wsite-background2 wsite-custom-background" style="background-image: url(wedding_flower_banner_short_2.jpg);">
 		<div id="banner">
 			<!-- Modified <h2>{headline:text global="false"}</h2> 
 				 <p>{headline-paragraph:text global="false"}</p>
 				 <div class="button-wrap">{loginaction:button global="false"}</div> -->
 			<div id="home-page-enter-border">
 
-				<div id="home-page-enter">	
-					<div class="pgtitle"><h2>Ceremony</h2><div class="fancy-font-header"><h2>Style</h2></div></div>
-					<p>Discover your unique wedding style. We have put together a portfolio of fabulous wedding inspiration and beautiful photographs which we hope will inspire you. Tell us which pics you love so we can build a flower profile that fits your distinct wedding style. We can get a sense of your style with <b><i>ten photographs</b></i>, but remember, the more pics you rate, the more accurate we can be. </p>
-					
-					
-					<div class="picdone"><a class="wsite-button wsite-button-large wsite-button-normal" href="profile.html" >
-									<span class="wsite-button-inner">I'm Done</span></a>
-					</div>
-					
-										
+				<div id="home-page-enter">
+					<div class="fancy-font-header"><h2>Discover Your Style</h2></div></div>
+					<p style="font-size: 1em;">Discover your unique wedding style. We have put together a portfolio of fabulous wedding inspiration and beautiful photographs which we hope will inspire you. Tell us which pics you love so we can build a flower profile that fits your distinct wedding style. Whimsy can get a sense of your style with <u><i>ten photographs</u></i>, but remember, the more pics you rate, the more accurate we can be.</p>				
 					
 					<div class="startbox">
-					<div style="height: 40px; overflow: hidden; width: 100%;"></div>
-					<a class="wsite-button wsite-button-large wsite-button-normal" href="#start" >
-			<span class="wsite-button-inner">Discover My Style</span>
+						<div style="height: 40px; overflow: hidden; width: 100%;"></div>
+						<a class="wsite-button wsite-button-large wsite-button-normal" href="#start" >
+							<span class="wsite-button-inner">Discover My Style</span>
 			
-		</a><div style="height: 40px; overflow: hidden; width: 100%;"></div>
+						</a>
+						<div style="height: 40px; overflow: hidden; width: 100%;"></div>
 		
 					</div>
+				</div>
 			</div>
-			
-		</div>
 		
+			<div class="wsite-backgroundpreload wsite-custom-background" style="background-image: url(/public/assets/pic0.jpg);">
+
 		<div class="selPic"><a href="#matched"><i class="fa fa-thumbs-up fa-6"></i></a></div>
 		<div class="selPicNo"><a href="#notmatched"><i class="fa fa-thumbs-down fa-6"></i> </a></div>
 		<!--<div class="picstart"><a class="wsite-button wsite-button-large wsite-button-normal" href="#start" >
 			<span class="wsite-button-inner">Let's Get Started</span>
 		</a></div>-->
 		
+		</div>
 		<div id="banner-bottom">
 			<!-- Modified <h2>{headline:text global="false"}</h2> 
 				 <p>{headline-paragraph:text global="false"}</p>
@@ -68,6 +63,10 @@
 						</div>
 					</div>
 					
+		<div class="picdone"><a class="wsite-button wsite-button-large wsite-button-normal" href="profile.html" >
+		<span class="wsite-button-inner">I'm Done</span></a>
+		</div>
+
 					
 								
 								
@@ -78,8 +77,8 @@
 						  maxImgs = 35;
 						  
 						  $(document).ready(function(){
-							$('.wsite-background2').css("background-image", "url(img/wedding_flower_bannder_short_2.jpg)"); 
-							$('.wsite-backgroundpreload').css("background-image", "url(img/pic"+(window.photoIndex)+".jpg)"); 
+							$('.wsite-background2').css("background-image", "url(/public/assets/img/wedding_flower_banner_short_2.jpg')"); 
+							$('.wsite-backgroundpreload').css("background-image", "url(/public/assets/img/pic"+(window.photoIndex)+".jpeg)"); 
 							$('.selPic').hide();
 							$('.selPicNo').hide();
 							$('.picdone').hide();
@@ -125,7 +124,7 @@
 								Ceremony: 0
 							};
 
-							$('.wsite-background2').css("background-image", "url(/files/theme/wedding_flower_banner_short_2.jpg)");
+							$('.wsite-background2').css("background-image", "url(/wedding_flower_banner_short_2.jpg)");
 							});	
 
 						  $('a[href="#notmatched"]').on("click", function (e){
@@ -436,9 +435,9 @@
 								
 								currentPhotoIndex = window.photoIndex
 								if (currentPhotoIndex != maxImgs){
-								  $('.wsite-background2').css("background-image", "url(/files/theme/pic"+(currentPhotoIndex+1)+".jpg)");
+								  $('.wsite-background2').css("background-image", "url(/public/assets/picturesforfinal/pic"+(currentPhotoIndex+1)+".jpg)");
 								  if (currentPhotoIndex<maxImgs-1){
-									  $('.wsite-backgroundpreload').css("background-image", "url(/files/theme/pic"+(currentPhotoIndex+2)+".jpg)"); 
+									  $('.wsite-backgroundpreload').css("background-image", "url(/public/assets/picturesforfinal/pic"+(currentPhotoIndex+2)+".jpg)"); 
 								  }
 								  window.photoIndex=currentPhotoIndex+1;
 								   $(".uk-progress-bar").text(currentPhotoIndex+" Photos");

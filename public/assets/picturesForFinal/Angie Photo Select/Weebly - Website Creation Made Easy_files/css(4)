@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel-Regular'), url(http://themes.googleusercontent.com/static/fonts/cinzel/v2/PPYkMH2Vr9iqUFBaz60XpevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cinzel-Bold'), url(http://themes.googleusercontent.com/static/fonts/cinzel/v2/L74890HNVnUypqWjqGUt1bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Cinzel-Black'), url(http://themes.googleusercontent.com/static/fonts/cinzel/v2/u8CPqNcpTcF_eDy_SWp9tbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('CinzelDecorative-Regular'), url(http://themes.googleusercontent.com/static/fonts/cinzeldecorative/v2/fmgK7oaJJIXAkhd9798yQoem3WQP60SwtMX1R01QT0U.woff) format('woff');
+}
+@font-face {
+  font-family: 'Clicker Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Clicker Script'), local('ClickerScript-Regular'), url(http://themes.googleusercontent.com/static/fonts/clickerscript/v2/Zupmk8XwADjufGxWB9KThLDH3ri20rYH10B2w3wbVeU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/poiretone/v2/HrI4ZJpJ3Fh0wa5ofYMK8b3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Stalemate';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stalemate'), local('Stalemate-Regular'), url(http://themes.googleusercontent.com/static/fonts/stalemate/v2/ILXfSNYxooD2TPt48NlaP7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
