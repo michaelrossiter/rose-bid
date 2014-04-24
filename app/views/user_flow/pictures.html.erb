@@ -4,30 +4,29 @@
 	<%= render file: "/layouts/_navbar.html.erb" %>
 <!-- END Navbar-->
       
-	<div class="banner-wrap wsite-background2 wsite-custom-background" style="background-image: url(wedding_flower_banner_short_2.jpg);">
+    <div class="wsite-backgroundpreload wsite-custom-background" style="background-image: url(http://rose-bid.weebly.com/files/theme/pic0.jpg);">
+	<div class="banner-wrap wsite-background2 wsite-custom-background" style="background-image: url(http://rose-bid.weebly.com/files/theme/wedding_flower_banner_short_2.jpg);">
 		<div id="banner">
-			<!-- Modified <h2>{headline:text global="false"}</h2> 
-				 <p>{headline-paragraph:text global="false"}</p>
-				 <div class="button-wrap">{loginaction:button global="false"}</div> -->
+
 			<div id="home-page-enter-border">
 
 				<div id="home-page-enter">
-					<div class="fancy-font-header"><h2>Discover Your Style</h2></div></div>
-					<p style="font-size: 1em;">Discover your unique wedding style. We have put together a portfolio of fabulous wedding inspiration and beautiful photographs which we hope will inspire you. Tell us which pics you love so we can build a flower profile that fits your distinct wedding style. Whimsy can get a sense of your style with <u><i>ten photographs</u></i>, but remember, the more pics you rate, the more accurate we can be.</p>				
-					
-					<div class="startbox">
-						<div style="height: 40px; overflow: hidden; width: 100%;"></div>
-						<a class="wsite-button wsite-button-large wsite-button-normal" href="#start" >
-							<span class="wsite-button-inner">Discover My Style</span>
+					<div class="pgtitle">
+						<div class="fancy-font-header"><h2>Discover Your Style</h2></div></div>
+						<p style="font-size: 1em;">Discover your unique wedding style. We have put together a portfolio of fabulous wedding inspiration and beautiful photographs which we hope will inspire you. Tell us which pics you love so we can build a flower profile that fits your distinct wedding style. Whimsy can get a sense of your style with <u><i>ten photographs</u></i>, but remember, the more pics you rate, the more accurate we can be.</p>					
+						<div class="startbox">
+							<div style="height: 40px; overflow: hidden; width: 100%;"></div>
+							<a class="wsite-button wsite-button-large wsite-button-normal" href="#start" >
+								<span class="wsite-button-inner">Discover My Style</span>
+							</a>
+							<div style="height: 40px; overflow: hidden; width: 100%;"></div>
 			
-						</a>
-						<div style="height: 40px; overflow: hidden; width: 100%;"></div>
-		
+						</div>
 					</div>
 				</div>
 			</div>
-		
-			<div class="wsite-backgroundpreload wsite-custom-background" style="background-image: url(/public/assets/pic0.jpg);">
+		</div>		
+			
 
 		<div class="selPic"><a href="#matched"><i class="fa fa-thumbs-up fa-6"></i></a></div>
 		<div class="selPicNo"><a href="#notmatched"><i class="fa fa-thumbs-down fa-6"></i> </a></div>
@@ -70,15 +69,15 @@
 					
 								
 								
-					<script>
+<script>
 					  jQuery(function($)  {
 					  
 						  window.photoIndex = 0;
 						  maxImgs = 35;
 						  
 						  $(document).ready(function(){
-							$('.wsite-background2').css("background-image", "url(/public/assets/img/wedding_flower_banner_short_2.jpg')"); 
-							$('.wsite-backgroundpreload').css("background-image", "url(/public/assets/img/pic"+(window.photoIndex)+".jpeg)"); 
+							$('.wsite-background2').css("background-image", "url(http://rose-bid.weebly.com/files/theme/wedding_flower_bannder_short_2.jpg)"); 
+							$('.wsite-backgroundpreload').css("background-image", "url(http://rose-bid.weebly.com/files/theme/pic"+(window.photoIndex)+".jpg)"); 
 							$('.selPic').hide();
 							$('.selPicNo').hide();
 							$('.picdone').hide();
@@ -124,7 +123,7 @@
 								Ceremony: 0
 							};
 
-							$('.wsite-background2').css("background-image", "url(/wedding_flower_banner_short_2.jpg)");
+							$('.wsite-background2').css("background-image", "url(http://rose-bid.weebly.com/files/theme/wedding_flower_banner_short_2.jpg)");
 							});	
 
 						  $('a[href="#notmatched"]').on("click", function (e){
@@ -133,10 +132,10 @@
 							  
 						  });
 						  
-						  $('a[href="profile.html"]').on("click", function (e){
+						  $('a[href="products.html"]').on("click", function (e){
 						  
 							  e.preventDefault();
-							  window.location='profile.html';
+							  window.location='products.html';
 							  
 						  });
 						  
@@ -435,9 +434,9 @@
 								
 								currentPhotoIndex = window.photoIndex
 								if (currentPhotoIndex != maxImgs){
-								  $('.wsite-background2').css("background-image", "url(/public/assets/picturesforfinal/pic"+(currentPhotoIndex+1)+".jpg)");
+								  $('.wsite-background2').css("background-image", "url(http://rose-bid.weebly.com/files/theme/pic"+(currentPhotoIndex+1)+".jpg)");
 								  if (currentPhotoIndex<maxImgs-1){
-									  $('.wsite-backgroundpreload').css("background-image", "url(/public/assets/picturesforfinal/pic"+(currentPhotoIndex+2)+".jpg)"); 
+									  $('.wsite-backgroundpreload').css("background-image", "url(http://rose-bid.weebly.com/files/theme/pic"+(currentPhotoIndex+2)+".jpg)"); 
 								  }
 								  window.photoIndex=currentPhotoIndex+1;
 								   $(".uk-progress-bar").text(currentPhotoIndex+" Photos");
@@ -456,7 +455,7 @@
 								  //$(".uk-progress-bar").css.("width":((currentPhotoIndex+1)/maxImgs*100)+"%");
 								}
 								else{
-									window.location = 'profile.html';
+									window.location = 'products.html';
 								}
 								// if > 20 imgs, show done 
 							}
@@ -468,7 +467,8 @@
 
 						});
 					</script>
-					
+
+	
 					
 				</div>
 			</div>
