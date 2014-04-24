@@ -591,7 +591,7 @@ a[href="#notmatched"]:hover > .fa{
 	display:table-cell;
 	max-width: 300px;
 	height: 100%;
-	width: 47.5% !important;
+	width: 30% !important;
 	//table-layout:fixed;
 }
 
@@ -645,7 +645,7 @@ a[href="#notmatched"]:hover > .fa{
 }
 
 .step-spacing{
-	width: 5%;
+	width: 3%;
 	display: table-cell;
 }
 
@@ -924,8 +924,7 @@ a[href="#notmatched"]:hover > .fa{
 }
 
 .pic-page .colorblockdark-map,
-.short-header-page .colorblockdark-map,
-.landing-page .colorblockdark-map{
+.short-header-page .colorblockdark-map {
 	padding-top: 56px;
 	padding-bottom: 0px;
 	background: #e8d5c4;
@@ -936,8 +935,18 @@ a[href="#notmatched"]:hover > .fa{
 	align: center;
 }
 
+.landing-page .colorblocklight, 
+.landing-page .colorblockdark-map {
+	padding-top: 25px;
+	padding-bottom: 0px;
+	background: #e8d5c4;
+	height: 100%;
+	min-height: 500px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 .pic-page .colorblocklight,
-.landing-page .colorblocklight,
 .tall-header-page .colorblocklight,
 .short-header-page .colorblocklight,
 .no-header-page .colorblocklight {
@@ -1090,6 +1099,27 @@ body {
 .landing-page .wsite-background {
 	background: #fff url('img/wedding_flower_banner_short_2.jpg') center center no-repeat;
 	background-size: cover;
+}
+
+.landing-page .block1-background {
+	background: #fff url('img/block1.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	max-height: 200px;
+}
+
+.landing-page .block2-background {
+	background: #fff url('img/block2.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	max-height: 200px;
+}
+
+.landing-page .block3-background {
+	background: #fff url('img/block3.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	max-height: 200px;
 }
 
 .pic-page .wsite-background2 {
