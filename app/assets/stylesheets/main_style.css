@@ -1049,26 +1049,26 @@ body {
 .tall-header-page .wsite-background,
 .short-header-page .wsite-background,
 .landing-page .wsite-background {
-	background: #fff url('img/wedding_flower_banner_short_2.jpg') center center no-repeat;
+	background: #fff url('wedding_flower_banner_short_2.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 .landing-page .block1-background {
-	background: #fff url('img/block1.jpg') center center no-repeat;
+	background: #fff url('block1.jpg') center center no-repeat;
 	background-size: cover;
 	min-height: 200px;
 	max-height: 200px;
 }
 
 .landing-page .block2-background {
-	background: #fff url('img/block2.jpg') center center no-repeat;
+	background: #fff url('block2.jpg') center center no-repeat;
 	background-size: cover;
 	min-height: 200px;
 	max-height: 200px;
 }
 
 .landing-page .block3-background {
-	background: #fff url('img/block3.jpg') center center no-repeat;
+	background: #fff url('block3.jpg') center center no-repeat;
 	background-size: cover;
 	min-height: 200px;
 	max-height: 200px;
