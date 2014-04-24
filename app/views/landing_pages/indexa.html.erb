@@ -1,29 +1,6 @@
 <body class='landing-page  wsite-theme-light wsite-page-index'>
 <!-- START Navbar-->
-	<div id="nav-wrap">
-		<div class="container">
-			<table id="header">
-				<tr>
-					<td id ="logo"><!--{logo}-->
-						<a href="/indexa.html"><span class="stalemate">R</span><span id="title-text2">ose</span><span class="cinzel">Bid</span></a>
-						<!--<img src="/files/theme/title-icon-4.png" id="title-icon">-->
-						<span id="subtitle-text">Find the Perfect Flowers for Your Wedding</span>
-					</td>
-					<!--{menu}-->
-					<td>
-						<ul class='wsite-menu-default'>
-							<li id='pg925725211574932156'><%= link_to "Home", root_path %></li>
-							<li id='pg925725211574932156'><%= link_to "Sign Up", user_flow_login_path %></li>
-							<li id='pg925725211574932156'><%= link_to "Log In", user_flow_login_path %></li>
-						</ul>
-					</td>
-
-					<!--<td class="search">{search}</td>-->
-				</tr>
-			</table>
-		</div><!-- end container -->
-	</div><!-- end nav-wrap -->
-
+	<%= render file: "/layouts/_navbar.html.erb" %>
 <!-- END Navbar-->
 
 <!-- START Banner Section -->
@@ -125,10 +102,10 @@
 				</div>
 
 				<div align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">
-							<!--
+
 							<div id="map-container">
 						
-								<div class="map-links" id="map-links1">
+								<!-- <div class="map-links" id="map-links1"> 
 									<ul>
 										<li><a href="#">Atlanta</a></li>
 										<li><a href="#">Boston</a></li>
@@ -138,10 +115,10 @@
 										<li><a href="#">Dallas</a></li>
 									</ul>
 								</div>
-								
+								-->
 								<div id="map"></div>
 								
-								<div class="map-links" id="map-links2">
+								<!-- <div class="map-links" id="map-links2">
 									<ul>
 										<li><a href="#">Raleigh-Durham</a></li>
 										<li><a href="#">Richmond</a></li>
@@ -171,7 +148,7 @@
 										<li><a href="#">Portland</a></li>
 									</ul>
 								</div>
-									
+							
 							</div>
 						-->
 					</div>
@@ -182,7 +159,14 @@
 				<div align="center" style="width: 100%; overflow-y: hidden;" class="sec2">
 					<div class="step">
 						<div class="stepcol2">
-							<span class='imgPusher' style='float:left;height:0px'></span><span style='z-index:10;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'><a><img src="http://rosehelp1.weebly.com/uploads/2/7/0/2/27022422/_5746861.png" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:0;" alt="Picture" class="galleryImageBorder wsite-image" /></a><span style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;" class="wsite-caption"></span></span>
+							<span class='imgPusher' style='float:left;height:0px'></span>
+							<span style='z-index:10;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'>
+								<a>
+									<img src="http://rosehelp1.weebly.com/uploads/2/7/0/2/27022422/_5746861.png" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:0;" alt="Picture" class="galleryImageBorder wsite-image" />
+								</a>
+								<span style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;" class="wsite-caption"></span>
+							</span>
+							
 							<p align="left"><b>The Secret Garden</b><br />New York, NY<br />"The Secret Garden is New York's best kept secret. &nbsp;Xavier's eye for design and flowers is truly amazing. I wouldn't go anywhere else for my event." - <i>Karen</i></p>
 						</div>
 
@@ -240,11 +224,12 @@
 									<tr class='wsite-multicol-tr'>
 										<td class='wsite-multicol-col' style='width:50%;padding:0 5px'>
 											
-											<!-- START IMAGE TWO -->
+											<!-- START Reviews BOX ONE -->
 											<span class='imgPusher' style='float:left;height:0px'></span>
 											<span style='z-index:10;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'>
 											<a>
-												<img src="./img/pic18.jpeg" style="margin-top: 10px; margin-bottom: 0px; margin-left: 0px; margin-right: 10px; border-width:0;" alt="Picture" class="galleryImageBorder wsite-image" /></a>
+											<%= image_tag 'pic18.jpeg', :class =>'galleryImageBorder galleryHeader wsite-image' %>
+											</a>
 											<span style="display: block; font-size: 90%; margin-top: -0px; margin-bottom: 0px; text-align: center;" class="wsite-caption"></span></span>
 											
 											<div class="paragraph" style="text-align:left;display:block;">Brittany, 29, Austin<br />"I spent for-EVER calling florists and trying to get prices. RoseBid made it really easy! My flowers were beautiful!"</div>
@@ -256,55 +241,64 @@
 												<div id='511063014915295518-insideImageContainer0' style='position:relative;margin:5px;'>
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
-												<a href='./img/pic18.jpeg' rel='lightbox[gallery511063014915295518]' onclick='if (!window.lightboxLoaded) return false'>
-													<img src='./img/pic18.jpeg' class='galleryImage' _width='225' _height='225' style='position:absolute;border:0;width:100%;top:-16.67%;left:0%' />
+												<a href='/assets/images/pic18.jpeg' rel='lightbox[gallery511063014915295518]' onclick='if (!window.lightboxLoaded) return false'>
+												<%= image_tag 'pic18.jpeg', :class =>'galleryImage' %>
 												</a>
 												</div>
 												</div>
 												</div>
 												</div>
+												
 												<div id='511063014915295518-imageContainer1' style='float:left;width:19.95%;margin:0;'>
 												<div id='511063014915295518-insideImageContainer1' style='position:relative;margin:5px;'>
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 												<a href='./img/pic18.jpeg' rel='lightbox[gallery511063014915295518]' onclick='if (!window.lightboxLoaded) return false'>
-													<img src='./img/pic18.jpeg' class='galleryImage' _width='183' _height='275' style='position:absolute;border:0;width:100%;top:-50.18%;left:0%' /></a>
+													<%= image_tag 'pic19.jpeg', :class =>'galleryImage' %>
+													</a>
 												</div>
 												</div>
 												</div>
 												</div>
+												
 												<div id='511063014915295518-imageContainer2' style='float:left;width:19.95%;margin:0;'>
 												<div id='511063014915295518-insideImageContainer2' style='position:relative;margin:5px;'>
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
-												<a href='./img/pic18.jpeg' rel='lightbox[gallery511063014915295518]' onclick='if (!window.lightboxLoaded) return false'><img src='./img/pic18.jpeg' class='galleryImage' _width='229' _height='220' style='position:absolute;border:0;width:100%;top:-14.05%;left:0%' /></a>
+													<a href='./img/pic18.jpeg' rel='lightbox[gallery511063014915295518]' onclick='if (!window.lightboxLoaded) return false'>
+													<%= image_tag 'pic20.jpeg', :class =>'galleryImage' %>
+													</a>
+												
 												</div></div></div></div>
-												<div id='511063014915295518-imageContainer3' style='float:left;width:19.95%;margin:0;'>
+												
+											<div id='511063014915295518-imageContainer3' style='float:left;width:19.95%;margin:0;'>
 												<div id='511063014915295518-insideImageContainer3' style='position:relative;margin:5px;'>
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 													<a href='./img/pic18.jpeg' rel='lightbox[gallery511063014915295518]' onclick='if (!window.lightboxLoaded) return false'>
-														<img src='./img/pic18.jpeg' class='galleryImage' _width='214' _height='236' style='position:absolute;border:0;width:100%;top:-23.52%;left:0%' />
+													
+													<%= image_tag 'pic21.jpeg', :class =>'galleryImage' %>
 													</a>
-												</div></div></div></div>
-												<div id='511063014915295518-imageContainer4' style='float:left;width:19.95%;margin:0;'>
+											</div></div></div></div>
+											<div id='511063014915295518-imageContainer4' style='float:left;width:19.95%;margin:0;'>
 												<div id='511063014915295518-insideImageContainer4' style='position:relative;margin:5px;'>
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 												<a href='./img/pic18.jpeg' rel='lightbox[gallery511063014915295518]' onclick='if (!window.lightboxLoaded) return false'>
-													<img src='./img/pic18.jpeg' class='galleryImage' _width='283' _height='178' style='position:absolute;border:0;width:119.24%;top:0%;left:-9.62%' />
+													<%= image_tag 'pic22.jpeg', :class =>'galleryImage' %>
 												</a>
 											</div></div></div></div>
 												<span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>
 											</div>
 
 											<!-- START IMAGE TWO -->
-											<div style="height: 0px; overflow: hidden;"></div></div>
+											<div style="height: 0px; overflow: hidden;"></div>
+											</div>
 											<span class='imgPusher' style='float:left;height:0px'></span>
 											<span style='z-index:10;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'>
 											<a>
-												<img src="./img/pic18.jpeg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:0;" alt="Picture" class="galleryImageBorder wsite-image" />
-												</a>
+											<%= image_tag 'pic23.jpeg', :class =>'galleryImageBorder galleryHeader wsite-image' %>		
+											</a>
 											<span style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;" class="wsite-caption"></span></span>
 											
 											<div class="paragraph" style="text-align:left;display:block;">Angie, 26, California<br />"Planning a destination wedding was a lot of work, but thanks to RoseBid getting the perfect flowers was easy!"</div>
@@ -317,7 +311,7 @@
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 												<a href='./img/pic18.jpeg' rel='lightbox[gallery611970405564771423]' onclick='if (!window.lightboxLoaded) return false'>
-													<img src='./img/pic18.jpeg' class='galleryImage' _width='244' _height='207' style='position:absolute;border:0;width:100%;top:-6.56%;left:0%' />
+													<%= image_tag 'pic23.jpeg', :class =>'galleryImage' %>
 												</a>
 												</div></div></div></div>
 												<div id='611970405564771423-imageContainer1' style='float:left;width:19.95%;margin:0;'>
@@ -325,14 +319,14 @@
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 												<a href='./img/pic18.jpeg' rel='lightbox[gallery611970405564771423]' onclick='if (!window.lightboxLoaded) return false'>
-													<img src='./img/pic18.jpeg' class='galleryImage' _width='275' _height='183' style='position:absolute;border:0;width:112.7%;top:0%;left:-6.35%' />
+													<%= image_tag 'pic24.jpeg', :class =>'galleryImage' %>
 												</a>
 												</div></div></div></div>
 												<div id='611970405564771423-imageContainer2' style='float:left;width:19.95%;margin:0;'><div id='611970405564771423-insideImageContainer2' style='position:relative;margin:0px;'>
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 												<a href='./img/pic18.jpeg' rel='lightbox[gallery611970405564771423]' onclick='if (!window.lightboxLoaded) return false'>
-													<img src='./img/pic18.jpeg' class='galleryImage' _width='275' _height='183' style='position:absolute;border:0;width:112.7%;top:0%;left:-6.35%' />
+													<%= image_tag 'pic25.jpeg', :class =>'galleryImage' %>
 												</a>
 												</div></div></div></div>
 												<div id='611970405564771423-imageContainer3' style='float:left;width:19.95%;margin:0;'>
@@ -340,7 +334,7 @@
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 													<a href='./img/pic18.jpeg' rel='lightbox[gallery611970405564771423]' onclick='if (!window.lightboxLoaded) return false'>
-														<img src='./img/pic18.jpeg' class='galleryImage' _width='200' _height='251' style='position:absolute;border:0;width:100%;top:-33.67%;left:0%' />
+														<%= image_tag 'pic26.jpeg', :class =>'galleryImage' %>
 													</a>
 												</div></div></div></div>
 												<div id='611970405564771423-imageContainer4' style='float:left;width:19.95%;margin:0;'>
@@ -348,7 +342,7 @@
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 													<a href='./img/pic18.jpeg' rel='lightbox[gallery611970405564771423]' onclick='if (!window.lightboxLoaded) return false'>
-														<img src='./img/pic18.jpeg' class='galleryImage' _width='260' _height='194' style='position:absolute;border:0;width:100.52%;top:0%;left:-0.26%' />
+														<%= image_tag 'pic27.jpeg', :class =>'galleryImage' %>
 													</a>
 												</div></div></div></div>
 												<span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>
@@ -363,7 +357,7 @@
 											<span class='imgPusher' style='float:left;height:0px'></span>
 											<span style='z-index:10;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'>
 												<a>
-													<img src="./img/pic18.jpeg" style="margin-top: 10px; margin-bottom: 0px; margin-left: 0px; margin-right: 10px; border-width:0;" alt="Picture" class="galleryImageBorder wsite-image" />
+													<%= image_tag 'pic28.jpeg', :class =>'galleryImageBorder galleryHeader wsite-image' %>
 												</a>
 												<span style="display: block; font-size: 90%; margin-top: -0px; margin-bottom: 0px; text-align: center;" class="wsite-caption"></span></span>
 											<div class="paragraph" style="text-align:left;display:block;">Jennifer, 25, Boston<br />"RoseBid was so easy to use. &nbsp;I filled in my style profile &amp; almost immediately had reasonable quotes from florists in my area."</div>
@@ -376,7 +370,7 @@
 												<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>
 												<div class='galleryInnerImageHolder'>
 													<a href='./img/pic18.jpeg' rel='lightbox[gallery289418634959057987]' onclick='if (!window.lightboxLoaded) return false'>
-														<img src='./img/pic18.jpeg' class='galleryImage' _width='275' _height='183' style='position:absolute;border:0;width:112.7%;top:0%;left:-6.35%' />
+														<%= image_tag 'pic28.jpeg', :class =>'galleryImage' %>
 													</a>
 												</div></div></div></div>
 											<div id='289418634959057987-imageContainer1' style='float:left;width:19.95%;margin:0;'>
