@@ -1,2 +1,7 @@
 	<div style="margin-top:5px;"></div>
-	<%= image_tag '/assets/block1.jpg', :class =>'banner-wrap', :style => "min-height:600px;main-height:600px;padding-top:5px;padding-bottom:5px;" %>
+	<div class="img-block">
+		<%= image_tag '/assets/block1.jpg' %>
+		<div class="img-block-cover">
+			<%= link_to "Wedding Inspiration to find the perfect flowers", user_flow_pictures_path %>
+		</div>		
+	</div>

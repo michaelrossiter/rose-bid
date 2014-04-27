@@ -1053,27 +1053,6 @@ body {
 	background-size: cover;
 }
 
-.landing-page .block1-background {
-	background: #fff url('img/block1.jpg') center center no-repeat;
-	background-size: cover;
-	min-height: 600px;
-	max-height: 600px;
-}
-
-.landing-page .block2-background {
-	background: #fff url('img/block2.jpg') center center no-repeat;
-	background-size: cover;
-	min-height: 600px;
-	max-height: 600px;
-}
-
-.landing-page .block3-background {
-	background: #fff url('img/block3.jpg') center center no-repeat;
-	background-size: cover;
-	min-height: 600px;
-	max-height: 600px;
-}
-
 .pic-page .wsite-background2 {
 	background: #000 url('') center center no-repeat;
 	background-size: cover;
