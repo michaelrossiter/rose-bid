@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rose Bid - Find the Perfect Flowers for Your Wedding</title>
+	<title>Rose Bid - Find the Perfect Flowers for Your Wedding | <%= yield(:title) %></title>
 	<meta name='description' content='We match you with amazing florists for your wedding needs.' />
 	<meta name='keywords' content='wedding, flowers, value, quality, bouquets' />
 	<meta property='og:site_name' content='Rose Bid - Find the Perfect Flowers for Your Wedding' />
@@ -27,11 +27,9 @@
   	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
-
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
 
 <!-- START FONT Files-->
-	<link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' />
@@ -49,4 +47,9 @@
 			
 <!-- END YIELD -->
 
+<div style='padding: 20px; width:100%; text-align:center;background:black;'>
+		<%= link_to "Home", landing_pages_indexa_path %> | <%= link_to "Team", static_pages_about_path %> | <%= link_to "How It Works", static_pages_how_it_works_path %> | <%= link_to "Contact", static_pages_contact_path %>
+</div>
+
+</body>
 </html>

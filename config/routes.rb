@@ -4,6 +4,7 @@ RoseBid::Application.routes.draw do
 
   get "landing_pages/indexa"
   get "landing_pages/indexb"
+
   get "user_flow/login"
   get "user_flow/eventsel"
   get "user_flow/pictures"
@@ -14,7 +15,13 @@ RoseBid::Application.routes.draw do
   get "user_flow/view_quotes"
   get "user_flow/bella_flora_quote"
   get "user_flow/bella_flora_details"
-  
+  get "user_flow/style_summary"
+  get "user_flow/profile_details_sign_up"
+  get "user_flow/eventsandproducts"
+
+  get "static_pages/about"
+  get "static_pages/contact"
+  get "static_pages/how_it_works" 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

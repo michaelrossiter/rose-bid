@@ -26,6 +26,13 @@ class UserFlowController < ApplicationController
   def bella_flora_quote
   end
 
-  def bella_flora_details
+  def style_summary
   end
+ 
+  def profile_details_sign_up
+  end  
+
+  def eventsandproducts
+  end
+
 end
