@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'Bebas';
+	src: url('../fonts/bebasregular.eot');
+	src: url('../fonts/bebasregular.eot?') format('embedded-opentype'),
+	     url('../fonts/bebasregular.ttf') format('truetype');
+}
+
+.fancy-font { 
+	font-family: "Clicker Script";
+	text-transform: none;
+	color: #ee7777;
+}
+
+/* Weebly lightbox hacks*/
+
+.fancybox-lock {
+	overflow: auto !important;
+}
+.fancybox-lock .fancybox-overlay {
+	overflow: hidden !important;
+}
+
+/* Weebly gallery CSS */
+
+.galleryImageHolder{
+	position:relative; 
+	width:100%; 
+	padding:0 0 75%;
+	overflow:hidden;
+}
+
+.galleryImageHolderTop{
+	float:left;
+	width:23%;
+	margin:5px;
+	border:5px solid #eee;
+
+}
+
+/* Custom Slick Slider CSS*/
+
+.slick-list,
+.slick-slider{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.slick-slide{
+	margin: 0 auto;
+}
+
+
