@@ -114,7 +114,7 @@ p {
 }
 
 blockquote {
-	background-image: url('public/quotes.png')) no-repeat 0px 25px;
+	background-image: url('public/quotes.png') no-repeat 0px 25px;
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
@@ -1050,7 +1050,6 @@ body {
 .tall-header-page .wsite-background,
 .short-header-page .wsite-background,
 .landing-page .wsite-background {
-	background: #fff url('public/wedding_flower_banner_short_2.jpg') center center no-repeat;
 	background-size: cover;
 }
 
