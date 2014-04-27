@@ -114,7 +114,7 @@ p {
 }
 
 blockquote {
-	background: url("http://rose-bid.weebly.com/theme/quotes.png") no-repeat 0px 25px;
+	background-image: url(image_path('quotes.png')) no-repeat 0px 25px;
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
@@ -190,7 +190,7 @@ div#content {min-height:400px;}
 }
 
 .sel-page #home-page-enter-border{
-	background: #fff url('http://rose-bid.weebly.com/theme/wedding_flower_banner_short_2.jpg') center center no-repeat !important;
+	background-image: url(image_path('wedding_flower_banner_short_2.jpg')) center center no-repeat !important;
 	background-size: cover !important;
 }
 
@@ -1049,12 +1049,12 @@ body {
 .tall-header-page .wsite-background,
 .short-header-page .wsite-background,
 .landing-page .wsite-background {
-	background: #fff url('http://rose-bid.weebly.com/theme/wedding_flower_banner_short_2.jpg') center center no-repeat;
+	background-image: url(image_path('wedding_flower_banner_short_2.jpg')) center center no-repeat;
 	background-size: cover;
 }
 
 .landing-page .block1-background {
-	background-image: url(<%= asset_path 'block1.jpg' %>) center center no-repeat;
+	background-image: url(image_path('img/block1.jpg')) center center no-repeat;
 	background-size: cover;
 	min-height: 600px;
 	max-height: 600px;
