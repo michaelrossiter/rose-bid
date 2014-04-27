@@ -8,12 +8,14 @@ gem 'rails', '4.0.4'
 gem 'sqlite3', '1.3.8', :groups => [:development, :test]
 gem 'rspec-rails', '2.13.1', :groups => [:development, :test]
 
-
 gem 'selenium-webdriver', '2.35.1', :group => :test
 gem 'capybara', '2.1.0', :group => :test
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
+
+# Unicorn for production webserver
+gem 'unicorn', :group => :production
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
