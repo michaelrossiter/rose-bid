@@ -2,10 +2,10 @@
 		<div class="container">
 			<table id="header">
 				<tr>
-					<td id ="logo"><!--{logo}-->
-						<%= link_to "RoseBid", root_path, :class => "stalemate", :id => "title-text2" %>
-						<!--<img src="/files/theme/title-icon-4.png" id="title-icon">-->
-						<span id="subtitle-text">Find the Perfect Flowers for Your Wedding</span>
+					<td id ="logo">
+						<%= link_to "RoseBid", root_path, :class => "stalemate", :id => "title-text2", :style => "z-index:1;padding-bottom:10px;padding-top:-20px;" %>
+						<%= image_tag "title-icon-4.png",  :id => "title-icon", :style => "z-index:0;" %>&nbsp;&nbsp;
+						<span id="subtitle-text" style="z-index:1;">Find the Perfect Flowers for Your Wedding</span>
 					</td>
 					<!--{menu}-->
 					<td>
