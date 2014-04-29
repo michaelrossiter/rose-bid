@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Start Optimizely -->
+	<%= yield(:headerJS) %>
+<!-- End Optimizely -->
 	<title>Rose Bid - Find the Perfect Flowers for Your Wedding | <%= yield(:title) %></title>
 	<meta name='description' content='We match you with amazing florists for your wedding needs.' />
 	<meta name='keywords' content='wedding, flowers, value, quality, bouquets' />
@@ -47,9 +50,7 @@
     <link href="http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css" rel="stylesheet" type="text/css">
 <!-- END EXTERNAL CSS -->
 
-<!-- Start Optimizely -->
-	<%= yield(:headerJS) %>
-<!-- End Optimizely -->
+
 </head>
 
        
