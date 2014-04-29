@@ -2476,7 +2476,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   padding: 8px 12px 8px 12px;
   border: 1px solid transparent;
   border-bottom-width: 0;
-  color: #0077dd;
+  //color: #0077dd;
   text-decoration: none;
   border-radius: 4px 4px 0 0;
   text-shadow: 0 1px 0 #ffffff;

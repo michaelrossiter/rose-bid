@@ -6,9 +6,6 @@
 	padding-top:5px;
 	padding-bottom:5px;
 	background-size: cover;
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-	font-weight: normal;
 	line-height: 24px;
 	color: #626262;
 }
@@ -30,6 +27,55 @@
    opacity: .8; 
 }
 
+.img-block .img-text-float {
+	display:block;
+	position: absolute;
+	top: 40px; 
+	width: 100%;
+	padding: .1em 10px;
+	font-size: 2.2em;
+	text-transform: none;
+	letter-spacing: normal;
+	text-align: center;
+	font-weight: 300;
+	color: #fff;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.img-block .img-button-float {
+	position: absolute;
+	top: 80px; 
+	margin-left:0px;
+	width: 100%;
+	padding: .5em 20px;
+	font-size: 1.75em;
+}
+
+.img-block .img-text-float .img-text-button button {
+	display: inline-block;
+	text-shadow: rgba(33,33,33,0.7) 0px 0px 9px,rgba(33,33,33,0.7) 0px 0px 3px;
+	width: auto;
+	position: relative;
+	font-weight: bold;
+	font-size: .75em;
+	border: 2px solid #fff;
+	padding: 8px 26px 8px 15px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.img-block .img-text-float .img-text-button button a {
+	display: block;
+}
+
+.img-block .img-text-float .img-text-button:hover a {
+	display: block;
+	background: #EEE;
+}
+
 .img-block a {
 	text-decoration: none !important;
 	text-transform: uppercase;
@@ -39,9 +85,10 @@
 	-moz-transition: .2s;
 	-webkit-transition: .2s;
 	-webkit-transition: all linear 0.2s;
-	transition: all linear 0.2s;
 	color: white;
 }
+
+
 
 .img-block .banner-border {
    	position: absolute;

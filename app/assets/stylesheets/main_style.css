@@ -548,54 +548,7 @@ a[href="#notmatched"]:hover > .fa{
 	//table-layout:fixed;
 }
 
-#step1{
-	//color: #fff !important;
-	background: #FFAC90;
-	padding: 0;
-	border-radius: 24px;
-	//vertical-align: middle;
-	min-height: 100px;
-	padding: 30px 30px 30px 30px;
-	margin: 10px auto;
-	text-align: center;
-	display:table-cell;
-	max-width: 300px;
-	height: 100%;
-	width: 30% !important;
-	//table-layout:fixed;
-}
 
-#step2{
-	//color: #fff !important;
-	background: #F79284;
-	padding: 0;
-	border-radius: 24px;
-	//vertical-align: middle;
-	min-height: 100px;
-	padding: 30px 30px 30px 30px;
-	margin: 10px auto;
-	text-align: center;
-	display:table-cell;
-	max-width: 300px;
-	height: 100%;
-	width: 30%;
-}
-
-#step3{
-	//color: #fff !important;
-	background: #ee7777;
-	padding: 0;
-	border-radius: 24px;
-	//vertical-align: middle;
-	min-height: 100px;
-	padding: 30px 30px 30px 30px;
-	margin: 10px auto !important;
-	text-align: center;
-	display:table-cell;
-	max-width: 300px;
-	height: 100%;
-	width: 30%;
-}
 
 .step-spacing{
 	width: 3%;
@@ -617,8 +570,7 @@ a[href="#notmatched"]:hover > .fa{
 	
 }
 .pic-page .container .colorblocklight .wcustomhtml .step,
-.short-header-page .container .colorblocklight .wcustomhtml .step,
-.landing-page .container .colorblocklight .wcustomhtml .step{
+.short-header-page .container .colorblocklight .wcustomhtml .step {
 	color: #fff;
 	font-size: 20px !important;
 	padding: .5em 0 .2em 0;
@@ -888,14 +840,6 @@ a[href="#notmatched"]:hover > .fa{
 	text-align: center;
 }
 
-.landing-page .colorblocklight, 
-.landing-page .colorblockdark-map {
-	padding-top: 25px;
-	padding-bottom: 0px;
-	background: #e8d5c4;
-	padding-left: 10%;
-	padding-right: 10%;
-}
 
 .pic-page .colorblocklight,
 .tall-header-page .colorblocklight,

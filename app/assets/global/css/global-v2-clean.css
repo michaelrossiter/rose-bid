@@ -60,7 +60,7 @@ body {
 }
 
 #logo {
-    min-width: 440px;
+    min-width: 410px;
     padding-left: 35px;
     background: url('../imgs/logo.png') 95px 5px no-repeat;
     background-size: 70px;
