@@ -170,13 +170,12 @@ div#content {min-height:400px;}
 	vertical-align: middle;
 	margin: 0 auto;
 }
-
-
 .subcontent{
 	margin-top: 20px;
 	color: #626262 !important;
-}
+	text-align:justify;
 
+}
 .landing-page #main-wrap .colorful h2{
 	font-size: 50px !important;
 	line-height: 10 px !important;
@@ -184,9 +183,6 @@ div#content {min-height:400px;}
 
 .colorful .fancy-font-header h2{
 	color: #ee7777 !important;
-}
-
-.landing-page .fancy-font-header h2{
 }
 
 .sel-page #home-page-enter-border{
@@ -559,10 +555,10 @@ a[href="#notmatched"]:hover > .fa{
 .short-header-page .container .colorblocklight .wcustomhtml .step h2, 
 .landing-page .container .colorblocklight .wcustomhtml .step h2{
 	color: #fff;
-	font-size: 20px !important;
+	font-size: 1.75em;
 	padding: .2em 0 .2em 0;
 	line-height: 1.2;
-	font-family: 'Bebas', sans-serif !important;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	font-weight: thin;
 	text-transform: uppercase;
 	word-spacing:7px;
@@ -1331,8 +1327,7 @@ body {
 .pic-page #main-wrap .container h2,
 .short-header-page #main-wrap .container h2,
 .landing-page #main-wrap .container h2 {
-	font-size: 40px;
-	line-height: 45px;
+	font-size: 2.2em;
 }
 
 .sel-page .button-wrap,
@@ -1420,8 +1415,9 @@ html body .galleryImageBorder, html body a .galleryImageBorder {
 }
 
 .galleryHeader {
-	max-width: 100px;
-	max-height: 150px;
+	
+	max-width: 150px;
+	max-height: 200px;
 	margin-top: 10px; 
     margin-bottom: 0px; 
     margin-left: 0px; 

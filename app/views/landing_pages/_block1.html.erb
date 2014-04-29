@@ -1,13 +1,17 @@
 	<div style="margin-top:5px;"></div>
 	<div class="img-block">
 		<%= image_tag '/assets/block1.jpg' %>
-		<div class="img-text-float">
-			Inspiration to Find the Perfect Flowers...
-		</div>	
+		<p class="img-block-cover">
+			Inspiration to find the perfect flowers
+		</p>
+
+
 		<div class="img-button-float">
-			<button class="uk-button img-text-button" style="width:15%;border=3px;border-color:#000;margin-left:65%;" type="button">
-				<i class="uk-icon-angle-right" style="display:block;float:left;padding-top:6px;padding-left:10px;"></i>
-				<%= link_to "Go now!", user_flow_pictures_path, :style => "color:#000;" %>
+			<button class="uk-button img-text-button pull-right" style="width:auto;border:0;margin-right:0%;" type="button">
+				<i class="uk-icon-angle-right" style="display:block;float:left;padding-top:4px;padding-left:10px;"></i>
+				<%= link_to "Discover my style", user_flow_pictures_path, :style => "color:#000;" %>
 			</button>
 		</div>
+
+
 	</div>

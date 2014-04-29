@@ -1,7 +1,16 @@
 	<div style="margin-top:5px;"></div>
 	<div class="img-block">
 		<%= image_tag '/assets/block3.jpg' %>
-		<div class="img-block-cover">
-			<%= link_to "Get matched to top florists now!", user_flow_pictures_path %>
-		</div>		
+		<p class="img-block-cover">
+			Style inspiration for the perfect wedding
+		</p>		
+		<div class="img-button-float">
+			<button class="uk-button img-text-button pull-right" style="width:auto;border:0;margin-right:0%;" type="button">
+				<i class="uk-icon-angle-right" style="display:block;float:left;padding-top:4px;padding-left:10px;"></i>
+				<%= link_to "Start building my profile", user_flow_pictures_path, :style => "color:#000;" %>
+			</button>
+		</div>
+
+
+
 	</div>

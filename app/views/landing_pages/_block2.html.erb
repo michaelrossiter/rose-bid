@@ -1,7 +1,15 @@
 	<div style="margin-top:5px;"></div>
 	<div class="img-block">
 		<%= image_tag '/assets/block2.jpg' %>
-		<div class="img-block-cover">
-			<%= link_to "The best florists, personally vetted", user_flow_pictures_path %>
-		</div>		
+		<p class="img-block-cover">
+			The best florists, all personally vetted by us
+		</p>		
+
+		<div class="img-button-float">
+			<button class="uk-button img-text-button pull-right" style="width:auto;border:0;margin-right:0%;" type="button">
+				<i class="uk-icon-angle-right" style="display:block;float:left;padding-top:4px;padding-left:10px;"></i>
+				<%= link_to "get matched to top florists", user_flow_pictures_path, :style => "color:#000;" %>
+			</button>
+		</div>
+
 	</div>
