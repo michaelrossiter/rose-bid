@@ -186,7 +186,7 @@ div#content {min-height:400px;}
 }
 
 .sel-page #home-page-enter-border{
-	background-image: url('public/wedding_flower_banner_short_2.jpg') center center no-repeat !important;
+	background-image: url('http://rosebid-assets.s3.amazonaws.com/images/wedding_flower_banner_short_2.jpg') center center no-repeat !important;
 	background-size: cover !important;
 }
 
