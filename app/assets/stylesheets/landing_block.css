@@ -1,13 +1,45 @@
 .img-block {
 	position: relative; 
 	width: 100%;
-	min-height:600px;
-	max-height:600px;
+	min-height:400px;
+	max-height:400px;
 	padding-top:5px;
 	padding-bottom:5px;
 	background-size: cover;
 	line-height: 24px;
 	color: #626262;
+}
+
+.wedding-flower-banner {
+	    background: url('http://s3-us-west-2.amazonaws.com/rosebid-assets/images/wedding_flower_banner_short_2.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.block1 {
+	    background: url('http://s3-us-west-2.amazonaws.com/rosebid-assets/images/block1.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.block2 {
+	    background: url('http://s3-us-west-2.amazonaws.com/rosebid-assets/images/block2.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.block3 {
+	    background: url('http://s3-us-west-2.amazonaws.com/rosebid-assets/images/block3.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 
 .img-block img {
