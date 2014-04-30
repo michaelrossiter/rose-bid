@@ -11,7 +11,7 @@
 }
 
 .wedding-flower-banner {
-	    background: url('http://s3-us-west-2.amazonaws.com/rosebid-assets/images/wedding_flower_banner_short_2.jpg') no-repeat center center fixed; 
+	    background: url('http://rosebid-assets.s3.amazonaws.com/images/wedding_flower_banner_short_2.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 .block1 {
-	    background: url('http://s3-us-west-2.amazonaws.com/rosebid-assets/images/block1.jpg') no-repeat center center fixed; 
+	    background: url('http://rosebid-assets.s3.amazonaws.com/images/block1.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -27,7 +27,7 @@
 }
 
 .block2 {
-	    background: url('http://s3-us-west-2.amazonaws.com/rosebid-assets/images/block2.jpg') no-repeat center center fixed; 
+	    background: url('http://rosebid-assets.s3.amazonaws.com/images/block2.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -35,7 +35,7 @@
 }
 
 .block3 {
-	    background: url('http://s3-us-west-2.amazonaws.com/rosebid-assets/images/block3.jpg') no-repeat center center fixed; 
+	    background: url('http://rosebid-assets.s3.amazonaws.com/images/block3.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
