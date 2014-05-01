@@ -1181,13 +1181,13 @@ body {
 }
 
 /*.pic-page .banner-wrap #banner,*/
-.landing-page .banner-wrap #banner,
 .tall-header-page .banner-wrap #banner,
 .short-header-page .banner-wrap #banner {
 	padding: 0;
 	display: table-cell;
     text-align: center;
     vertical-align: middle;
+
 }
 .sel-page .banner-wrap #banner,
 .pic-page .banner-wrap #banner-bottom,
@@ -1244,6 +1244,8 @@ body {
 	width: 100%;
 	height: 196px;
 	padding-top: 58px;
+	background-image: url('http://rosebid-assets.s3.amazonaws.com/images/wedding_flower_banner_short_2.jpg') center center no-repeat !important;
+	background-size: cover !important;
 }
 
 /* Page type: No header
@@ -1309,6 +1311,8 @@ body {
 	box-sizing: border-box;
 	padding-top: 51px;
 	padding-bottom: 55px;
+	background: url('http://rosebid-assets.s3.amazonaws.com/images/wedding_flower_banner_short_2.jpg') center center no-repeat !important;
+	background-size: cover !important;
 }
 
 .sel-page .banner-wrap,
