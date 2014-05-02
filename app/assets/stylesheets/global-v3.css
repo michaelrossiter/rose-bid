@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'Bebas';
-	src: url('../fonts/bebasregular.eot');
-	src: url('../fonts/bebasregular.eot?') format('embedded-opentype'),
-	     url('../fonts/bebasregular.ttf') format('truetype');
+	src: url('http://rosebid-assets.s3.amazonaws.com/fonts/bebasregular.eot');
+	src: url('http://rosebid-assets.s3.amazonaws.com/fonts/bebasregular.eot?') format('embedded-opentype'),
+	     url('http://rosebid-assets.s3.amazonaws.com/fonts/bebasregular.ttf') format('truetype');
 }
 
 .fancy-font { 

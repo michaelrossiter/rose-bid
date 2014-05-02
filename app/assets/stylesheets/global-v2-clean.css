@@ -62,7 +62,7 @@ body {
 #logo {
     min-width: 410px;
     padding-left: 35px;
-    background: url('../imgs/logo.png') 95px 5px no-repeat;
+    background: url('http://rosebid-assets.s3.amazonaws.com/images/logo.png') 95px 5px no-repeat;
     background-size: 70px;
 }
 
@@ -118,7 +118,7 @@ body {
 }
 
 .wsite-background {
-    background: #fff url('../imgs/banner.jpg') center center no-repeat;
+    background: #fff url('http://rosebid-assets.s3.amazonaws.com/images/banner.jpg') center center no-repeat;
     background-size: cover;
 }
 

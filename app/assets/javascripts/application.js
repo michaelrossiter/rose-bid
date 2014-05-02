@@ -10,7 +10,14 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
+
+//= require horizscroll
+//= require slick.min
+//= require rangeslider.min
+//= require uikit.min
+//= require timepicker.min
+//= require datepicker.min
+//= require upload.min
 //= require turbolinks
-//= require_tree .
+//= require customselect
+

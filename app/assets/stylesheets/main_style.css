@@ -1430,9 +1430,6 @@ html body .galleryImageBorder, html body a .galleryImageBorder {
 }
 
 .galleryImage {
-	 max-width: 100px;
-	 max-height: 125px;
-	 padding-top: 25px;
 	 position:absolute;
 	 border:0;
 	 width:100%;
@@ -1440,6 +1437,13 @@ html body .galleryImageBorder, html body a .galleryImageBorder {
 	 left:0;
 }
 
+.galleryImageHolderTop{
+	float:left;
+	width:23%;
+	margin:5px;
+	border:5px solid #eee;
+	z-index:3;
+}
 .wslide {
 	font-family: inherit;
 }
