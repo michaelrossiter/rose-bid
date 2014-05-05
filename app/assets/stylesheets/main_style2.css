@@ -42,7 +42,6 @@
  textarea { overflow: auto; vertical-align: top; }
  table { border-collapse: collapse; border-spacing: 0; }
  input:focus, select:focus, textarea:focus, button:focus { outline: none; }
- h2 { color:#222; font:normal 20px/22px 'Source Sans Pro', sans-serif; padding:0.3em 0; margin:0; }
  div.paragraph { padding: 0.2em 0 !important; margin:0; line-height:1.5; }
  p { padding: 0.2em 0 !important; margin:0; line-height:1.5; }
  html {height:100%;}
@@ -176,7 +175,7 @@
  .wsite-button:active, .wsite-button-large:active { background: #bcbdbd; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.2), inset 0 2px 2px rgba(0,0,0,0.2); }
  .wsite-button-highlight, .wsite-button-highlight:hover, .wsite-button-large.wsite-button-highlight, .wsite-button-large.wsite-button-highlight:hover { color:#fff !important; background: #E0443F; background: -moz-linear-gradient(top, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.04) 100%), #E0443F; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.04)), color-stop(100%,rgba(0,0,0,0.04))), #E0443F; background: -webkit-linear-gradient(top, rgba(255,255,255,0.04) 0%,rgba(0,0,0,0.04) 100%), #E0443F; background: -o-linear-gradient(top, rgba(255,255,255,0.04) 0%,rgba(0,0,0,0.04) 100%), #E0443F; background: -ms-linear-gradient(top, rgba(255,255,255,0.04) 0%,rgba(0,0,0,0.04) 100%), #E0443F; background: linear-gradient(to bottom, rgba(255,255,255,0.04) 0%,rgba(0,0,0,0.04) 100%), #E0443F; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0affffff', endColorstr='#0a000000',GradientType=0 ), #E0443F; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.2); }
  .wsite-button-highlight:active, .wsite-button-large.wsite-button-highlight:active { background: #BC3935; box-shadow:inset 0 1px 2px rgba(0,0,0,1); }
- .wsite-button-inner, .wsite-button-highlight .wsite-button-inner { background:none !important; padding:0 0 0 20px; }
+ .wsite-button-inner, .wsite-button-highlight .wsite-button-inner { background:none !important; padding:0 0 0 0px;}
  .wsite-button-large .wsite-button-inner, .wsite-button-large.wsite-button-highlight .wsite-button-inner { background:none !important; padding:0 0 0 25px; }
  .wsite-button-inner:active, .wsite-button-large .wsite-button-inner:active, .wsite-button-highlight .wsite-button-inner:active, .wsite-button-large.wsite-button-highlight .wsite-button-inner:active{ box-shadow:none !important; }
  .wsite-location div:not(.wsite-hide-map) { border-radius:3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:border-box; background: #fff; text-align:center; position:relative; }

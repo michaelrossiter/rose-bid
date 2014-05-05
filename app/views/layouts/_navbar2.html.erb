@@ -1,27 +1,18 @@
-	<div id="nav-wrap" style="overflow:hidden;">
-		<div class="container">
-			<table>
-				<tr>
-					<td id ="logo">
-						<%= link_to "RoseBid", root_path, :class => "stalemate", :id => "title-text2", :style => "z-index:1;padding-bottom:10px;" %>
-						<%= image_tag "title-icon-4.png",  :id => "title-icon", :style => "z-index:0;" %>&nbsp;&nbsp;
-						<span id="subtitle-text" style="z-index:1;">Find the Perfect Flowers for Your Wedding</span>
-					</td>
-					<!--{menu}-->
-					<td>
-						<ul class='wsite-menu-default'>
-							<li id='pg925725211574932156'><a href="http://white-reflections.com/rose-bid/V4/style-profile.html" style="font-size:0.8em;">Style Profile</a></li>
-							<li id='pg925725211574932156'><a href="http://white-reflections.com/rose-bid/V4/view-quotes.html" style="font-size:.8em;">View Quotes</a></li>
-							<li id='pg925725211574932156'><a href="http://white-reflections.com/rose-bid/V4/how-it-works.html" style="font-size:.8em;">How It Works</a></li>
-							<li id='pg925725211574932156' style="margin-left:150px;"><a href="#login" data-uk-modal style="font-size:.8em;">Log In/Save</a></li>
-						</ul>
-					</td>
+<div class="container">
 
-					<!--<td class="search">{search}</td>-->
-				</tr>
-			</table>
-		</div><!-- end container -->
-	</div><!-- end nav-wrap -->
+    <div id="logo" style="display:inline;">
+        <%= link_to "RoseBid", root_path, :class => "stalemate", :id => "title-text2", :style => "z-index:1;padding-bottom:10px;" %>
+        <%= image_tag "title-icon-4.png",  :id => "title-icon", :style => "z-index:0;" %>&nbsp;&nbsp;
+        <span id="subtitle-text" style="z-index:1;">Find the Perfect Flowers for Your Wedding</span>
+    
+    <nav class="uk-navbar" style="display:inline;">
+    <ul class="uk-navbar-nav" style="display:inline;">
+        <li id='pg925725211574932156'></li>
+        <li id='pg925725211574932156'><a href="http://white-reflections.com/rose-bid/V4/view-quotes.html" style="font-size:.8em;">View Quotes</a></li>
+        <li id='pg925725211574932156'><a href="http://white-reflections.com/rose-bid/V4/how-it-works.html" style="font-size:.8em;">How It Works</a></li>
+        <li id='pg925725211574932156' style="margin-left:150px;"><a href="#login" data-uk-modal style="font-size:.8em;">Log In/Save</a></li>
+    </ul>
+    </div>
 
 	<div id="login" class="uk-modal">
     <div class="uk-modal-dialog uk-modal-dialog-large">
@@ -69,5 +60,6 @@
             We will not share your profile information until you request for quotes from florists. By continuing, you agree to accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
             </p>
  
+        </div>
     </div>
 </div>

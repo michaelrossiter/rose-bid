@@ -399,9 +399,6 @@ a[href="#notmatched"]:hover > .fa{
 	bottom: 0px;
 	width: 100%;
 }
-#logo{
-	min-width: 450px !important;
-}
 
 .wsite-menu-default{
 	min-width: 250px !important;
@@ -478,10 +475,6 @@ a[href="#notmatched"]:hover > .fa{
 	
 }
 
-#locations .wsite-content-title {
-	padding-left: 10% !important;
-	padding-right: 10% !important;
-}
 
 #map{
 	margin: 0 auto;
@@ -500,11 +493,6 @@ a[href="#notmatched"]:hover > .fa{
 	right: 0px;
 }
 
-.colorblockdark-map .styled-hr{
-	//padding-left: 10%;
-	//padding-right: 10%;
-	width: 80% !important;
-}
 
 .wsite-elements, .wsite-not-footer{
 	//min-width: 450px;

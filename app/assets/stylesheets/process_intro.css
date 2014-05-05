@@ -1,10 +1,10 @@
 .landing-page .colorblocklight, 
 .landing-page .colorblockdark-map {
-	padding-top: 25px;
+	padding-top: 20px;
 	padding-bottom: 0px;
 	background: #FFF;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 8%;
+	padding-right: 8%;
 }
 
 .landing-page .container .colorblocklight .wcustomhtml .step {
