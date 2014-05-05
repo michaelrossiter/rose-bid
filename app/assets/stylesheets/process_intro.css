@@ -32,10 +32,13 @@
 	margin: 10px auto;
 	text-align: center;
 	display:table-cell;
-	max-width: 300px;
+	max-width: 255px;
+	min-width: 255px;
 	height: 100%;
-	width: 30% !important;
+	width: 100% !important;
 	//table-layout:fixed;
+	text-transform: none;
+	color: #FFF;
 }
 
 #step2{
@@ -49,9 +52,13 @@
 	margin: 10px auto;
 	text-align: center;
 	display:table-cell;
-	max-width: 300px;
+	max-width: 255px;
+	min-width: 255px;
 	height: 100%;
-	width: 30%;
+	width: 100% !important;
+	//table-layout:fixed;
+	text-transform: none;
+	color: #FFF;
 }
 
 #step3{
@@ -65,7 +72,11 @@
 	margin: 10px auto !important;
 	text-align: center;
 	display:table-cell;
-	max-width: 300px;
+	max-width: 255px;
+	min-width: 255px;
 	height: 100%;
-	width: 30%;
+	width: 100% !important;
+	//table-layout:fixed;
+	text-transform: none;
+	color: #FFF;
 }
