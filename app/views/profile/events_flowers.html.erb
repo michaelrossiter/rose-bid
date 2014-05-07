@@ -1,2 +1,927 @@
-<h1>Profile#events_flowers</h1>
-<p>Find me in app/views/profile/events_flowers.html.erb</p>
+<% provide(:title, 'Events & Flowers') %>
+
+<body class='short-header-page'>
+
+<!-- START Navbar-->
+	<%= render file: "/layouts/_navbar.html.erb" %>
+<!-- END Navbar-->
+
+    <div class="table">  
+
+        <div class="banner-wrap wsite-background">
+            <div id="banner">
+                <div id="home-page-enter-border">
+                    <div id="home-page-enter">  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-wrap">
+            <div class="container">
+                <div class="colorblocklight">
+                    <!-- START CONTENT HERE -->
+       <!-- START EVENTS/FLOWERS PAGE -->
+
+                    <h2 class="wsite-content-title" style="text-align:left;">Events & Flowers</h2>
+                    <p style="text-indent:25px; margin:0;">Choose which events you need flowers for:</p>
+                    
+                    <br>
+                    <div style="overflow: auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTopRoundBorder' style="background: url('eventflowers/buttons/pic33thumb.jpg') center center no-repeat;background-size: cover;">
+                            <div class='eventImageHolderSel eventsel' style="overflow:hidden" id="rehearsalsel">
+                                <div class='eventInfo' style="overflow:hidden" id="rehearsalselinner"></div>
+                            </div>
+                        </div>
+                        <div class='galleryImageHolderTopRoundBorder' style="background: url('eventflowers/buttons/pic15thumb.jpg') center center no-repeat;background-size: cover;">
+                            <div class='eventImageHolderSel eventsel' style="overflow:hidden" id="ceremonysel">
+                                <div class='eventInfo' style="overflow:hidden" id="ceremonyselinner"></div>
+                            </div>
+                        </div>
+                        <div class='galleryImageHolderTopRoundBorder' style="background: url('eventflowers/buttons/pic37thumb.jpg') center center no-repeat;background-size: cover;">
+                            <div class='eventImageHolderSel eventsel' style="overflow:hidden" id="receptionsel">
+                                <div class='eventInfo' style="overflow:hidden" id="receptionselinner"></div>
+                            </div>
+                        </div>
+                        <div class='galleryImageHolderTopRoundBorder' style="background: url('eventflowers/buttons/pic34thumb.jpg') center center no-repeat;background-size: cover;">
+                            <div class='eventImageHolderSel eventsel' style="overflow:hidden" id="brunchsel">
+                                <div class='eventInfo' style="overflow:hidden" id="brunchselinner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    
+
+                    <!-- ADD DISPLAY NONE -->
+            
+                    <ul class="uk-tab" data-uk-tab="{connect:'#events-content'}" id="events-ul">
+                        <li id="rehearsaltab" style="display:none;"><a href="#">Rehearsal Dinner</a></li>
+                        <li id="ceremonytab" style="display:none;"><a href="#">Ceremony</a></li>
+                        <li id="receptiontab" style="display:none;"><a href="#">Reception</a></li>
+                        <li id="brunchtab" style="display:none;"><a href="#">Next Day Brunch</a></li>
+                    </ul>
+
+                    <ul id="events-content" class="uk-switcher uk-margin">
+                        <li id="rehearsalcontent" style="display:none;"></li>
+                        <li id="ceremonycontent" style="display:none;">
+                       
+                            <p style="text-align:center; margin:0px;">
+                                <span style="position:relative;top:-7px">Let's style your&nbsp;&nbsp;</span>
+                                <span class="fancy-font" style="text-align:left; font-size:3em;">Ceremony</span>
+                                <span style="position:relative;top:-7px">&nbsp;&nbsp;&nbsp;flowers.</span>
+                                <br>
+                                Fields marked with <span style="color:red">*</span> are required. Completing optional fields is highly recommended for best results!
+                            </p>
+
+                            <br>
+
+                            <form class="uk-form" style="position: relative; margin: 0 auto;">
+                                <div class="uk-grid" style="position: relative;">
+                                    <div class="uk-width-1-2" style="position: relative;">
+                                        <div class="uk-grid" style="">
+                                            <div class="uk-width-1-4">Venue Name:</div>
+                                            <div class="uk-width-3-4"><input type="text" name="ceremonyvenue" placeholder="" class="uk-width-1-1"></div>
+                                            <br><br>
+                                            <div class="uk-width-1-4">Date<span style="color:red">*</span>:</div>
+                                            <div class="uk-width-3-4">
+                                                <div class="uk-form-icon" style="display:block !important">
+                                                    <i class="uk-icon-calendar"></i>
+                                                    <input id="ceremonydate" type="text" placeholder="MM/DD/YYYY" data-uk-datepicker="{format:'MM/DD/YYYY'}"  name="calendar" class="uk-width-1-1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2" style="position: relative;">
+                                        <div class="uk-grid" style="">
+                                            <div class="uk-width-1-4">City<span style="color:red">*</span>:</div>
+                                            <div class="uk-width-3-4"><input type="text" name="ceremonycity" placeholder="" class="uk-width-1-1"></div>
+                                            <br><br>
+                                            <div class="uk-width-1-4">State<span style="color:red">*</span>:</div>
+                                            <div class="uk-width-3-4"><input type="text" name="ceremonystate" placeholder="" class="uk-width-1-1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-2">
+                                        Is this an indoor or outdoor ceremony? (Select one.)
+                                        <br>
+                                        <div class="uk-grid">
+                                            <div class="uk-width-1-4">
+                                                <p style="text-align:center">
+                                                    <img src="eventflowers/indoor-nosel.png" style="width:75%; height: 75%; opacity:.6;" class="indoor">
+                                                </p>
+                                            </div>
+                                            <div class="uk-width-1-4">
+                                                <p style="text-align:center">
+                                                </p>
+                                            </div>
+                                            <div class="uk-width-1-4">
+                                                <p style="text-align:center">
+                                                    <img src="eventflowers/outdoor-nosel.png" style="width:75%; height: 75%; opacity:.6;" class="outdoor">
+                                                </p>
+                                            </div>
+                                            <div class="uk-width-1-4">
+                                                <p style="text-align:center">
+                                                </p>
+                                            </div>
+
+                                             
+
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        Can you describe your ideal ceremony lighting? (Select one.)
+                                        <br>
+                                        <div class="uk-grid">
+                                            <div class="uk-width-1-4">
+                                                <p style="text-align:center">
+                                                    <img src="eventflowers/sun-nosel.png" style="width:75%; height: 75%; opacity:.6;" class="sun">
+                                                </p>
+                                            </div>
+                                            <div class="uk-width-1-4">
+                                                <p style="text-align:center">
+                                                    <img src="eventflowers/lightbulb-nosel.png" style="width:75%; height: 75%; opacity:.6;" class="lightbulb">
+                                                </p>
+                                            </div>
+                                            <div class="uk-width-1-4">
+                                                <p style="text-align:center">
+                                                    <img src="eventflowers/candle-nosel.png" style="width:75%; height: 75%; opacity:.6;" class="candle">
+                                                </p>
+                                            </div>
+                                            <div class="uk-width-1-4">
+                                                <p style="text-align:center">
+                                                    <img src="eventflowers/moon-nosel.png" style="width:75%; height: 75%; opacity:.6;" class="moon">
+                                                </p>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="min-height:15px;"></div>
+                                <hr>
+                                <div style="min-height:1px;"></div>
+                                
+                                <p style="text-align:center;">Tell us the type and number of arrangements you need and then pick your favorite examples.</p>
+
+                                <!-- # CHANGED -->
+
+                                
+
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                    <div class="uk-width-1-3">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-3-4"><span class="fancy-font" style="text-align:left; font-size:1.8em;">Bridal Bouquet</span></div>
+                                            <div class="uk-width-1-4">
+                                                <input type="number" placeholder="0" step="1" value="0" min="0" name="bridebouquet" class="uk-width-1-1 bride" style="min-width:50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                </div>
+
+                                <br>
+
+                                <div class="slick-content bridecontent" style="position:relative; display:none;">
+                                    <div class="single-item-slick bridecontentslick" style="position:relative;">
+                                        <div class="slick-slide" >
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridebouquet/bouquet1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridebouquet/bouquet2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridebouquet/bouquet3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridebouquet/bouquet4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            
+                                            <br>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridebouquet/bouquet5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridebouquet/bouquet6thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridebouquet/bouquet7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridebouquet/Bouquet8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                    <div class="uk-width-1-3">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-3-4"><span class="fancy-font" style="text-align:left; font-size:1.8em;">Bridesmaid's Bouquet</span></div>
+                                            <div class="uk-width-1-4">
+                                                <input type="number" placeholder="0" step="1" value="0" min="0" name="bridesmaidbouquet" class="uk-width-1-1 bridesmaid" style="min-width:50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                </div>
+
+                                <br>
+
+                                <div class="slick-content bridesmaidcontent" style="position:relative; display:none;">
+                                    <div class="single-item-slick bridesmaidcontentslick" style="position:relative;">
+                                        <div class="slick-slide" >
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridesmaidbouquet/BM1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridesmaidbouquet/BM2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridesmaidbouquet/BM3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridesmaidbouquet/BM4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            
+                                            <br>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridesmaidbouquet/BM5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridesmaidbouquet/BM6thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridesmaidbouquet/BM7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/bridesmaidbouquet/BM8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                    <div class="uk-width-1-3">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-3-4"><span class="fancy-font" style="text-align:left; font-size:1.8em;">Groom Boutonniere</span></div>
+                                            <div class="uk-width-1-4">
+                                                <input type="number" placeholder="0" step="1" value="0" min="0" name="groomboutonniere" class="uk-width-1-1 groom" style="min-width:50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                </div>
+
+                                <br>
+
+                                <div class="slick-content groomcontent" style="position:relative; display:none;">
+                                    <div class="single-item-slick groomcontentslick" style="position:relative;">
+                                        <div class="slick-slide" >
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            
+                                            <br>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B6thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                    <div class="uk-width-1-3">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-3-4" ><span class="fancy-font" style="text-align:left; font-size:1.8em;">Groomsman Boutonniere</span></div>
+                                            <div class="uk-width-1-4">
+                                                <input type="number" placeholder="0" step="1" value="0" min="0" name="groomsmanboutonniere" class="uk-width-1-1 groomsman" style="min-width:50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                </div>
+
+                                <br>
+
+                                <div class="slick-content groomsmancontent" style="position:relative; display:none;">
+                                    <div class="single-item-slick groomsmancontentslick" style="position:relative;">
+                                        <div class="slick-slide" >
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            
+                                            <br>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B6thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/boutinniere/B8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                    <div class="uk-width-1-3">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-3-4"><span class="fancy-font" style="text-align:left; font-size:1.8em;">Flower Girl Basket</span></div>
+                                            <div class="uk-width-1-4">
+                                                <input type="number" placeholder="0" step="1" value="0" min="0" name="flowergirl" class="uk-width-1-1 flowergirl" style="min-width:50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                </div>
+
+                                <br>
+
+                                 <div class="slick-content flowergirlcontent" style="position:relative; display:none;">
+                                    <div class="single-item-slick flowergirlcontentslick" style="position:relative;">
+                                        <div class="slick-slide" >
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/flowergirl/FG1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/flowergirl/FG8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/flowergirl/FG3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/flowergirl/FG4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            
+                                            <br>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/flowergirl/FG5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/flowergirl/FG6thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/flowergirl/FG7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/flowergirl/FG8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                    <div class="uk-width-1-3">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-3-4"><span class="fancy-font" style="text-align:left; font-size:1.8em;">Aisle Runner</span></div>
+                                            <div class="uk-width-1-4">
+                                                <input type="number" placeholder="0" step="1" value="0" min="0" name="aislerunner" class="uk-width-1-1 aisle" style="min-width:50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                </div>
+
+                                <br>
+
+                                <div class="slick-content aislecontent" style="position:relative; display:none;">
+                                    <div class="single-item-slick aislecontentslick" style="position:relative;">
+                                        <div class="slick-slide" >
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/aisle/AisleRunner1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/aisle/AisleRunner2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/aisle/AisleRunner3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/aisle/AisleRunner4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            
+                                            <br>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/aisle/AisleRunner5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/aisle/AisleRunner6thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/aisle/AisleRunner7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/aisle/AisleRunner8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                    <div class="uk-width-1-3">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-3-4"><span class="fancy-font" style="text-align:left; font-size:1.8em;">Altar Piece</span></div>
+                                            <div class="uk-width-1-4">
+                                                <input type="number" placeholder="0" step="1" value="0" min="0" name="altarpiece" class="uk-width-1-1 altar" style="min-width:50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                </div>
+
+                                <br>
+
+                                <div class="slick-content altarcontent" style="position:relative; display:none;">
+                                    <div class="single-item-slick altarcontentslick" style="position:relative;">
+                                        <div class="slick-slide" >
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/altar/Altar1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/altar/Altar2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/altar/Altar3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/altar/Altar4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            
+                                            <br>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/altar/Altar5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/altar/Altar6thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/altar/Altar7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/altar/Altar8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                    <div class="uk-width-1-3">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-3-4"><span class="fancy-font" style="text-align:left; font-size:1.8em;">Canopy</span></div>
+                                            <div class="uk-width-1-4">
+                                                <input type="number" placeholder="0" step="1" value="0" min="0" name="canopy" class="uk-width-1-1 canopy" style="min-width:50px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">&nbsp;</div>
+                                </div>
+
+                                <br>
+
+                                <div class="slick-content canopycontent" style="position:relative; display:none;">
+                                    <div class="single-item-slick canopycontentslick" style="position:relative;">
+                                        <div class="slick-slide" >
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/Canopy/Canopy1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/Canopy/Canopy2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/Canopy/Canopy3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/Canopy/Canopy4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            
+                                            <br>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/Canopy/Canopy5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/Canopy/Canopy6thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/Canopy/Canopy7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                            <div class='galleryImageHolderTop galleryImageHolderTopSel'><div class='galleryImageHolderSel'>
+                                                <img src='eventflowers/Canopy/Canopy8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                            </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                
+                            </form>
+
+                            <div style="min-height:1px;"></div>
+                            <hr>
+                            <div style="min-height:1px;"></div>
+                            <p style="text-align:center">
+                                Would you like to make any changes your style that are ceremony specific? (Feel free to add/remove themes.)
+                            </p>
+
+                            <div class="slick-content" style="position:relative;">
+                                <div class="single-item-slick" style="position:relative;">
+                                    <div class="slick-slide" style="position:relative;left:0%">
+                                        <div class='galleryImageHolderTopSmall' style="border-color:#ee7777;"><div class='galleryImageHolderSel imgSelected' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Casual.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Chic.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Classic.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Elegant.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div> 
+                                        <div class='galleryImageHolderTopSmall' style="border-color:#ee7777;"><div class='galleryImageHolderSel imgSelected' style="overflow:hidden">
+                                            <img src='stylesummary/themes/simple.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <br>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/whimsical.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/understated.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'  style="border-color:#ee7777;"><div class='galleryImageHolderSel  imgSelected' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Romantic.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Laidback.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Rustic.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                    </div>
+                                    <div class="slick-slide" style="position:relative;left:0%">
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/handmade.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Royal.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Traditional.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Eclectic.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Dramatic.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <br>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Chic.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Overthetop.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/restive.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Streamlined.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderSel' style="overflow:hidden">
+                                            <img src='stylesummary/themes/Formal.png' class='galleryImageSel' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="uk-form" style="width:100%; margin: 0 auto;">
+                                <div class="uk-grid">
+                                    <div class="uk-width-1-3">Other words to describe your perfect ceremony? </div>
+                                    <div class="uk-width-2-3" style="position:relative;left:0px"><input type="text" name="stylewords" placeholder="" class="uk-width-3-3"></div>
+                                </div>
+                            </form>
+
+                            <br>
+                            <hr>
+
+                            <p style="text-align:center">
+                                <span style="position:relative;top:-7px">What's your&nbsp;&nbsp;</span>
+                                <span class="fancy-font" style="text-align:left; font-size:3em;">Color Story</span>
+                                <span style="position:relative;top:-7px">&nbsp;&nbsp;&nbsp;?</span>
+                                <br>
+                                Let us help you pick your color palette. First, do you have a primary color for your ceremony? 
+                            </p>
+
+                            <div id="colorpicker1">
+
+                                <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#f69679">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#fdc689">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#fff799">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#c4df9b">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#7accc8">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#7da7d9">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#caadd3">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#f8b2b9">
+                                    </div></div>
+                                </div>
+                                <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#f26c4f">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#fbaf5d">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#fff568">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#7cc576">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#00bff3">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#5674b9">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#a864a8">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#f06eaa">
+                                    </div></div>
+                                </div>
+                                <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#ed1c24">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#f26522">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#fff200">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#39b54a">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#00a99d">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#2e3192">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#92278f">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#ed145b">
+                                    </div></div>
+                                </div>
+                                <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#9e0b0f">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#a0410d">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#a3620a">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#598527">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#0076a3">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#1b1464">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#440e62">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#9e0039">
+                                    </div></div>
+                                </div>
+                                <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#790000">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#7b2e00">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#603913">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#005826">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#003663">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#0d004c">
+                                    </div></div>
+                                    <div class='colorTop colorSel'><div class='colorHolderSel' style="background-color:#4b0049">
+                                    </div></div>
+                                    <div class='colorTop colorSel' ><div class='colorHolderSel' style="background-color:#7a0026">
+                                    </div></div>
+                                </div>
+
+                            </div>
+
+                           
+
+                            <br>
+                            <div style="display:none;" id="colorresults">
+                                <p style="text-align:center;">Our experts recommend these secondary and accent colors based off your ceremony location, time and theme. <br> Select any that you like. 
+                                </p>
+
+                                <div style="overflow: auto; display: flex; justify-content: center; align-items: center;">
+                                    <div class='paletteHolderTopRoundBorder' style="overflow:hidden; width:459px; height:104px;">
+                                        <div class='eventImageHolderSel palettesel' style="overflow:hidden">
+                                            <img src="eventflowers/color1.jpg" class="colorpalette">
+                                        </div>
+                                    </div>
+                                    <div class='paletteHolderTopRoundBorder' style="overflow:hidden; width:459px; height:104px;">
+                                        <div class='eventImageHolderSel palettesel' style="overflow:hidden">
+                                            <img src="eventflowers/color2.jpg" class="colorpalette">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div style="overflow: auto; display: flex; justify-content: center; align-items: center;">
+                                    <div class='paletteHolderTopRoundBorder' style="overflow:hidden; width:459px; height:104px;">
+                                        <div class='eventImageHolderSel palettesel' style="overflow:hidden">
+                                            <img src="eventflowers/color3.jpg" class="colorpalette">
+                                        </div>
+                                    </div>
+                                    <div class='paletteHolderTopRoundBorder' style="overflow:hidden; width:459px; height:104px;">
+                                        <div class='' style="overflow:hidden">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+
+                                
+
+
+                                <div style="min-height:10px;"></div>
+                                <p style="text-align:center;">Or, click here to choose your own accents. &nbsp; &nbsp; &nbsp; <input type="checkbox" id="colorokcheckbox"></p>
+
+                                
+
+
+                                <div id="colorpicker2" style="display:none;">
+
+                                    <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#f69679">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#fdc689">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#fff799">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#c4df9b">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#7accc8">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#7da7d9">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#caadd3">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#f8b2b9">
+                                        </div></div>
+                                    </div>
+                                    <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#f26c4f">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#fbaf5d">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#fff568">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#7cc576">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#00bff3">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#5674b9">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#a864a8">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#f06eaa">
+                                        </div></div>
+                                    </div>
+                                    <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 olorSel2' style="background-color:#ed1c24">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#f26522">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#fff200">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#39b54a">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#00a99d">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#2e3192">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#92278f">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#ed145b">
+                                        </div></div>
+                                    </div>
+                                    <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#9e0b0f">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#a0410d">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#a3620a">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#598527">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#0076a3">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#1b1464">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#440e62">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#9e0039">
+                                        </div></div>
+                                    </div>
+                                    <div style="position:relative; overflow:hidden; margin:0 auto; display: flex; justify-content: center; align-items: center; width:auto;" >
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#790000">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#7b2e00">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#603913">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#005826">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#003663">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#0d004c">
+                                        </div></div>
+                                        <div class='colorTop colorSel'><div class='colorHolderSel2 colorSel2' style="background-color:#4b0049">
+                                        </div></div>
+                                        <div class='colorTop colorSel' ><div class='colorHolderSel2 colorSel2' style="background-color:#7a0026">
+                                        </div></div>
+                                    </div>
+
+                                    <br>
+
+                                    
+
+
+
+                                </div>
+                                    
+                            </div>
+                            
+                            <hr>
+                            <br>
+                            <div class="uk-grid uk-vertical-align" data-uk-grid-match>
+                                <div class="uk-width-1-3">
+                                    <p style="text-align:left;">Share your ceremony style with friends!</p>
+                                </div>
+                                <div class="uk-width-1-3" style="position:relative;left:-100px">
+                                    <div class="fb-share-button" data-href="http://www.rose-bid.com/events-flowers.html" data-width="300" data-type="button"></div>   
+                                </div>
+                                <div class="uk-width-1-3" style="position:relative;">
+                                    <a class="wsite-button" href="misc-details.html" style="position:absolute;right:0;margin:0 auto;top:7%">
+                                        <span class="wsite-button-inner">Finalize Request to Florists</span>
+                                    </a>
+                                </div>
+                            </div>
+                     
+                        </li>
+                        <li id="receptioncontent" style="display:none;"></li>
+                        <li id="brunchcontent" style="display:none;"></li>
+                    </ul>
+                            
+
+
+
+					<!-- END CONTENT HERE -->
+					
+				</div>
+				<div id="content-bottom-padding"></div>
+	        </div><!-- end container -->
+	    </div><!-- end main-wrap -->
