@@ -1,2 +1,99 @@
-<h1>Profile#final_details</h1>
-<p>Find me in app/views/profile/final_details.html.erb</p>
+<% provide(:title, 'Finalize Request') %>
+<body class='short-header-page'>
+
+<!-- START Navbar-->
+	<%= render file: "/layouts/_navbar.html.erb" %>
+<!-- END Navbar-->
+
+    <div class="table">  
+
+        <div class="banner-wrap wsite-background">
+            <div id="banner">
+                <div id="home-page-enter-border">
+                    <div id="home-page-enter">  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-wrap">
+            <div class="container">
+                <div class="colorblocklight">
+
+<!-- START CONTENT HERE -->
+<!-- FINALIZE DETAILS PAGE -->
+
+                    <h2>Complete Your Profile</h2>
+                    <br>
+                    The e-mail address and password you enter here will be used to create an account & save your wedding style. 
+                    <br>
+                    <form class="uk-form" style="position: relative; margin: 0 auto;">
+                    <br>
+                        <div class="uk-grid" style="position: relative;">
+                            <div class="uk-width-1-2" style="position: relative;">
+                                <div class="uk-grid" style="">
+                                    <div class="uk-width-1-4">Your Name<span style="color:red">*</span>:</div>
+                                    <div class="uk-width-3-4"><input type="text" name="personname" placeholder="FirstName  LastName" class="uk-width-1-1"></div>
+                                    <br><br>
+                                    <div class="uk-width-1-4">Phone #<span style="color:red">*</span>:</div>
+                                    <div class="uk-width-3-4"><input type="tel" name="persontel" placeholder="(123)456 -7890" class="uk-width-1-1"></div>
+
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2" style="position: relative;">
+                                <div class="uk-grid" style="">
+                                    <div class="uk-width-1-4">E-mail<span style="color:red">*</span>:</div>
+                                    <div class="uk-width-3-4"><input type="email" name="email" placeholder="username@gmail.com" class="uk-width-1-1"></div>
+                                    <br><br>
+                                    <div class="uk-width-1-4">Password<span style="color:red">*</span>:</div>
+                                    <div class="uk-width-3-4"><input type="password" name="password" placeholder="" class="uk-width-1-1"></div>
+                                </div>
+                            </div>
+        
+                            <div class="uk-width-1-2" style="position:relative; margin-top:20px;">
+                                <div class="uk-grid">
+
+                                    <div class="uk-width-1-4"><label for="amount">Budget:</label></div>
+                                    <div class="uk-width-3-4"><input type="text" id="amount" style="border:0; color:#ee7777; font-weight:bold;" class="uk-width-1-1"></div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2"></div>
+                        </div>
+                    </form>
+                     <br>
+                    <div id="slider"></div>
+
+                    <div class="steps">
+                        <span style="display:inline-block;width: 3%;text-align:left;margin-right: 13%;">|<br>$0</span>
+                        <span style="display:inline-block;width: 7%;text-align:center;margin-right: 12%;">|<br>$4k</span>
+                        <span style="display:inline-block;width: 7%;text-align:center;margin-right: 12%;">|<br>$8k</span>
+                        <span style="display:inline-block;width: 7%;text-align:center;margin-right: 12%;">|<br>$12k</span>
+                        <span style="display:inline-block;width: 7%;text-align:center;margin-right: 9%;">|<br>$16k</span>
+                        <span style="display:inline-block;width: 7%;text-align:right;">|<br>$20k</span>
+                    </div>
+
+
+                    <br><br>
+
+                    <div class="uk-grid uk-vertical-align" data-uk-grid-match>
+                        <div class="uk-width-3-5">
+                            &nbsp;
+                        </div>
+                        <div class="uk-width-2-5" style="position:relative;">
+                            <a class="wsite-button-red" href="profile-summary.html" style="position:absolute;right:0;margin:0 auto;top:20%">
+                                <span class="wsite-button-inner">Quote Request Summary</span>
+                            </a>
+                        </div>
+                    </div>
+
+<!-- END FINALIZE DETAIL PAGE -->
+             
+
+
+
+					<!-- END CONTENT HERE -->
+					
+				</div>
+				<div id="content-bottom-padding"></div>
+	        </div><!-- end container -->
+	    </div><!-- end main-wrap -->
