@@ -139,15 +139,15 @@
     jQuery(function($){
         $(document).ready(function(){
             $('.indoor').click(function() {
-                $(".indoor").attr("src","eventflowers/indoor-sel.png");
+                $(".indoor").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/indoor-sel.png");
                 $(".indoor").css("opacity","1");
-                $(".outdoor").attr("src","eventflowers/outdoor-nosel.png");
+                $(".outdoor").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/outdoor-nosel.png");
                 $(".outdoor").css("opacity",".6");
             });
             $('.outdoor').click(function() {
-                $(".outdoor").attr("src","eventflowers/outdoor-sel.png");
+                $(".outdoor").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/outdoor-sel.png");
                 $(".outdoor").css("opacity","1");
-                $(".indoor").attr("src","eventflowers/indoor-nosel.png");
+                $(".indoor").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/indoor-nosel.png");
                 $(".indoor").css("opacity",".6");
                 
             });
@@ -159,43 +159,43 @@
     jQuery(function($){
         $(document).ready(function(){
             $('.sun').click(function() {
-                $(".sun").attr("src","eventflowers/sun-sel.png");
+                $(".sun").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/sun-sel.png");
                 $(".sun").css("opacity","1");
-                $(".lightbulb").attr("src","eventflowers/lightbulb-nosel.png");
+                $(".lightbulb").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/lightbulb-nosel.png");
                 $(".lightbulb").css("opacity",".6");
-                $(".candle").attr("src","eventflowers/candle-nosel.png");
+                $(".candle").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/candle-nosel.png");
                 $(".candle").css("opacity",".6");
-                $(".moon").attr("src","eventflowers/moon-nosel.png");
+                $(".moon").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/moon-nosel.png");
                 $(".moon").css("opacity",".6");
             });
             $('.lightbulb').click(function() {
-                $(".lightbulb").attr("src","eventflowers/lightbulb-sel.png");
+                $(".lightbulb").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/lightbulb-sel.png");
                 $(".lightbulb").css("opacity","1");
-                $(".sun").attr("src","eventflowers/sun-nosel.png");
+                $(".sun").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/sun-nosel.png");
                 $(".sun").css("opacity",".6");
-                $(".candle").attr("src","eventflowers/candle-nosel.png");
+                $(".candle").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/candle-nosel.png");
                 $(".candle").css("opacity",".6");
-                $(".moon").attr("src","eventflowers/moon-nosel.png");
+                $(".moon").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/moon-nosel.png");
                 $(".moon").css("opacity",".6");
             });
             $('.candle').click(function() {
-                $(".candle").attr("src","eventflowers/candle-sel.png");
+                $(".candle").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/candle-sel.png");
                 $(".candle").css("opacity","1");
-                $(".sun").attr("src","eventflowers/sun-nosel.png");
+                $(".sun").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/sun-nosel.png");
                 $(".sun").css("opacity",".6");
-                $(".lightbulb").attr("src","eventflowers/lightbulb-nosel.png");
+                $(".lightbulb").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/lightbulb-nosel.png");
                 $(".lightbulb").css("opacity",".6");
-                $(".moon").attr("src","eventflowers/moon-nosel.png");
+                $(".moon").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/moon-nosel.png");
                 $(".moon").css("opacity",".6");
             });
             $('.moon').click(function() {
-                $(".moon").attr("src","eventflowers/moon-sel.png");
+                $(".moon").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/moon-sel.png");
                 $(".moon").css("opacity","1");
-                $(".lightbulb").attr("src","eventflowers/lightbulb-nosel.png");
+                $(".lightbulb").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/lightbulb-nosel.png");
                 $(".lightbulb").css("opacity",".6");
-                $(".candle").attr("src","eventflowers/candle-nosel.png");
+                $(".candle").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/candle-nosel.png");
                 $(".candle").css("opacity",".6");
-                $(".sun").attr("src","eventflowers/sun-nosel.png");
+                $(".sun").attr("src","http://rosebid-assets.s3.amazonaws.com/eventflowers/sun-nosel.png");
                 $(".sun").css("opacity",".6");
             });
         });

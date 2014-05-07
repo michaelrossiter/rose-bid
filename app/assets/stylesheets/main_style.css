@@ -190,23 +190,6 @@ div#content {min-height:400px;}
 	background-size: cover !important;
 }
 
-#rehearsalsel{
-	background: #fff url('img/Rehearsalpic1.jpg') center center no-repeat !important;
-	background-size: cover !important;
-}
-
-#ceremonysel{
-	background: #fff url('img/Ceremonypic2.jpg') center center no-repeat !important;
-	background-size: cover !important;
-}
-#receptionsel{
-	background: #fff url('img/reception1.jpg') center center no-repeat !important;
-	background-size: cover !important;
-}
-#brunchsel{
-	background: #fff url('img/brunch1.jpg') center center no-repeat !important;
-	background-size: cover !important;
-}
 
 .sel-page .home-page-enter-bordermul{
 	border-top: 0px !important;
