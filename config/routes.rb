@@ -1,5 +1,13 @@
 RoseBid::Application.routes.draw do
  
+  get "profile/style_profile"
+  get "profile/events_flowers"
+  get "profile/final_details"
+  get "profile/review_request"
+  get "profile/confirmation"
+  get "profile/view_quotes"
+  get "profile/bellaflora_profile"
+  get "profile/bellaflora_quote"
   root 'landing_pages#indexa'
 
   get "landing_pages/indexa"
