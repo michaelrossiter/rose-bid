@@ -1290,13 +1290,6 @@ body {
 	padding-bottom: 55px;
 }
 
-.sel-page #main-wrap .container h2,
-.pic-page #main-wrap .container h2,
-.short-header-page #main-wrap .container h2,
-.landing-page #main-wrap .container h2 {
-	font-size: 2.2em;
-}
-
 .sel-page .button-wrap,
 .pic-page .button-wrap,
 .short-header-page .button-wrap,

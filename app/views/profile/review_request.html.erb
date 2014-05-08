@@ -1,2 +1,526 @@
-<h1>Profile#review_request</h1>
-<p>Find me in app/views/profile/review_request.html.erb</p>
+<% provide(:title, 'Review Request') %>
+<body class='short-header-page'>
+
+<!-- START Navbar-->
+	<%= render file: "/layouts/_navbar.html.erb" %>
+<!-- END Navbar-->
+
+
+    <div class="table">  
+
+        <div class="banner-wrap wsite-background">
+            <div id="banner">
+                <div id="home-page-enter-border">
+                    <div id="home-page-enter">  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-wrap">
+            <div class="container">
+                <div class="colorblocklight">
+                    <!-- START CONTENT HERE -->
+
+             <!-- QUOTE REQUEST SUMMARY PAGE -->
+
+                    <div class="uk-grid uk-vertical-align" data-uk-grid-match>
+                        <div class="uk-width-3-5">
+                            <h2>Quote Request Summary</h2>
+                        </div>
+                        <div class="uk-width-2-5" style="position:relative;">
+                            <a class="wsite-button-red" href="request-confirmation.html" style="position:absolute;right:0;margin:0 auto;top:20%">
+                                <span class="wsite-button-inner">Submit Request</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p>Once you hit <b><i>Submit</i></b>, we will send your information to amazing florists in your area. Before we do that, please review your wedding profile carefully. </p>
+
+   
+
+                    <br>      
+                    <hr>
+                    <br> 
+
+                    <div class="uk-grid uk-vertical-align" data-uk-grid-match>
+                        <div class="uk-width-3-5">
+                            <h2 class="fancy-font" style="text-align:left;">Profile Information:</h2>
+                        </div>
+                        <div class="uk-width-2-5" style="position:relative;">
+                            <a class="wsite-button-red" href="misc-details.html" style="position:absolute;right:0;margin:0 auto;top:11%">
+                                <span class="wsite-button-inner">Edit</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="uk-grid" style="margin-left:25px;margin-top:10px;">
+                        <div class="uk-width-1-2">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-5"><b>Name:</b></div>
+                                <div class="uk-width-4-5">Caroline Bennett</div>
+                            </div>
+                            <div class="uk-grid" style="margin-top:5px;">
+                                <div class="uk-width-1-5"><b>E-mail:</b></div>
+                                <div class="uk-width-4-5">caroline.bennett@gmail.com</div>
+                            </div>
+                            <div class="uk-grid" style="margin-top:5px;">
+                                <div class="uk-width-1-5"><b>Phone:</b></div>
+                                <div class="uk-width-4-5">(215)555-5555</div>
+                            </div>
+                            <div class="uk-grid" style="margin-top:5px;">
+                                <div class="uk-width-1-5"><b>Budget:</b></div>
+                                <div class="uk-width-4-5">$2,000 - $5,000</div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                            &nbsp;
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div class="uk-grid uk-vertical-align" data-uk-grid-match>
+                        <div class="uk-width-3-5">
+                            <h2 class="fancy-font" style="text-align:left;">Flowers Needed:</h2>
+                        </div>
+                        <div class="uk-width-2-5" style="position:relative;">
+                            <a class="wsite-button-red" href="events-flowers.html" style="position:absolute;right:0;margin:0 auto;top:11%">
+                                <span class="wsite-button-inner">Edit</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h2 style="font-size:25px; margin-left: 25px;">Ceremony Flowers</h2>
+
+                    
+                    <div class="uk-grid" style="margin-left:25px;">
+                        <div class="uk-width-1-2">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-5"><b>Date:</b></div>
+                                <div class="uk-width-4-5">July 21, 2014</div>
+                            </div>
+                            <div class="uk-grid" style="margin-top:5px;">
+                                <div class="uk-width-1-5"><b>Location:</b></div>
+                                <div class="uk-width-4-5">SFMOMA, San Francisco, CA</div>
+                            </div>
+                            <div class="uk-grid" style="margin-top:5px;margin-bottom:0px;">
+                                <div class="uk-width-1-5"><b>&nbsp;</b></div>
+                                <div class="uk-width-4-5">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-2">
+                                            <div class="uk-grid">
+                                                <div class="uk-width-1-2">
+                                                    <p style="text-align:center">
+                                                        <img src="http://rosebid-assets.s3.amazonaws.com/eventflowers/indoor-sel.png" style="width:75%; height: 75%; opacity:.6;" class="indoor">
+                                                    </p>
+                                                </div>
+                                                <div class="uk-width-1-2">
+                                                    <p style="text-align:center">
+                                                        <img src="http://rosebid-assets.s3.amazonaws.com/eventflowers/lightbulb-sel.png" style="width:75%; height: 75%; opacity:.6;" class="indoor">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                            &nbsp;
+                        </div>
+                    </div>
+                  
+
+                    <h2 style="font-size:25px; text-align:center;">1 Bridal Bouquet</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/bridebouquet/bouquet1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/bridebouquet/bouquet7thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/bridebouquet/bouquet3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">6 Bridesmaid's Bouquets</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/bridesmaidbouquet/BM1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/bridesmaidbouquet/BM2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/bridesmaidbouquet/BM5thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+
+                    <h2 style="font-size:25px; text-align:center;">6 Groomsman Boutonnieres</h2>
+                    
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/boutinniere/B1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/boutinniere/B2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/boutinniere/B4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">1 Flower Girl Basket</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/flowergirl/FG1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/flowergirl/FG8thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/flowergirl/FG3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">1 Aisle Runner</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/aisle/AisleRunner1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/aisle/AisleRunner2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/aisle/AisleRunner3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">2 Altar Pieces</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/altar/Altar1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/altar/Altar2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/altar/Altar3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+                    
+                    <h2 style="font-size:25px; text-align:center;">1 Canopy</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/Canopy/Canopy1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/Canopy/Canopy2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/Canopy/Canopy3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">Ceremony Themes</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/stylesummary/themes/Classic.png' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/stylesummary/themes/Elegant.png' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/stylesummary/themes/Romantic.png' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">Ceremony Color Palette</h2>
+
+                    <div style="overflow: auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='paletteHolderTopRoundBorder' style="overflow:hidden; width:459px; height:104px;">
+                            <div class='' style="overflow:hidden">
+                                <img src="http://rosebid-assets.s3.amazonaws.com/eventflowers/color2.jpg" class="colorpalette">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+
+
+                    <h2 style="font-size:25px; margin-left: 25px;">Reception Flowers</h2>
+
+                    <div class="uk-grid" style="margin-left:25px;">
+                        <div class="uk-width-1-2">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-5"><b>Date:</b></div>
+                                <div class="uk-width-4-5">July 21, 2014</div>
+                            </div>
+                            <div class="uk-grid" style="margin-top:5px;">
+                                <div class="uk-width-1-5"><b>Location:</b></div>
+                                <div class="uk-width-4-5">SFMOMA, San Francisco, CA</div>
+                            </div>
+                            <div class="uk-grid" style="margin-top:5px;margin-bottom:0px;">
+                                <div class="uk-width-1-5"><b>&nbsp;</b></div>
+                                <div class="uk-width-4-5">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-2">
+                                            <div class="uk-grid">
+                                                <div class="uk-width-1-2">
+                                                    <p style="text-align:center">
+                                                        <img src="http://rosebid-assets.s3.amazonaws.com/eventflowers/indoor-sel.png" style="width:75%; height: 75%; opacity:.6;" class="indoor">
+                                                    </p>
+                                                </div>
+                                                <div class="uk-width-1-2">
+                                                    <p style="text-align:center">
+                                                        <img src="http://rosebid-assets.s3.amazonaws.com/eventflowers/lightbulb-sel.png" style="width:75%; height: 75%; opacity:.6;" class="indoor">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                            &nbsp;
+                        </div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">10 High Centerpieces</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/HighCenterpiece1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/HighCenterpiece2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/highcenterpiece3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">5 Low Centerpieces</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/lowcenterpiece1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/lowcenterpiece2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/lowcenterpiece3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">1 Cake Topper</h2>
+
+                    <!--<p style="text-align:center; margin-bottom: 0px; margin-top:0px;"><span class="fancy-font" style="text-align:left; font-size:1.8em;"> <b>1</b> Cake Topper</span></p>-->
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/caketopper1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/caketopper2thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTop'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/eventflowers/reception/caketopper3thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">Reception Themes</h2>
+
+                    <div style="position:relative; overflow:auto; margin:0 auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/stylesummary/themes/Casual.png' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/stylesummary/themes/simple.png' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                        <div class='galleryImageHolderTopSmall'><div class='galleryImageHolderNoSel'>
+                            <img src='http://rosebid-assets.s3.amazonaws.com/stylesummary/themes/Romantic.png' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                        </div></div>
+                    </div>
+
+                    <h2 style="font-size:25px; text-align:center;">Reception Color Palette</h2>
+
+                    <div style="overflow: auto; display: flex; justify-content: center; align-items: center;">
+                        <div class='paletteHolderTopRoundBorder' style="overflow:hidden; width:459px; height:104px;">
+                            <div class='' style="overflow:hidden">
+                                <img src="http://rosebid-assets.s3.amazonaws.com/eventflowers/color1.jpg" class="colorpalette">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+<div class="uk-grid uk-vertical-align" data-uk-grid-match>
+                        <div class="uk-width-3-5">
+                            <h2 class="fancy-font" style="text-align:left;">Special Requests:</h2>
+                        </div>
+                        <div class="uk-width-2-5" style="position:relative;">
+                            
+                            </a>
+                        </div>
+                    </div>
+                    <p style="margin-left:25px; "> Is there anything else you want florists to know? For example, special requests, delivery needs, and so on?</p>
+
+                    <form class="uk-form" style="margin-left:50px;">
+                
+                        <div class="uk-form-controls">
+                            <textarea cols="69" rows="7" placeholder=""></textarea>
+                        </div>
+
+                    </form>
+
+                    <br>
+                    <hr>
+
+                    <br>
+
+                    <div class="uk-grid uk-vertical-align" data-uk-grid-match>
+                        <div class="uk-width-3-5">
+                            <h2 class="fancy-font" style="text-align:left;">General Wedding Style:</h2>
+                        </div>
+                        <div class="uk-width-2-5" style="position:relative;">
+                            <a class="wsite-button-red" href="style-summary.html" style="position:absolute;right:0;margin:0 auto;top:11%">
+                                <span class="wsite-button-inner">Edit</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="slick-content" style="position:relative;">
+                        <div class="single-item-slick" style="position:relative;">
+                            <div class="slick-slide" >
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic4.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic4thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic1.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic1thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic9.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic9thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic11.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic11thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                
+                                <br>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic14.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic14thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic18.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic18thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic37.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic37thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic28.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic28thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                
+                            </div>
+                            <div class="slick-slide" >
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic30.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic30thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic32.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic32thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic34.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic34thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic37.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic37thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                
+                                <br>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic39.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic39thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic40.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic40thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic43.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic43thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                <div class='galleryImageHolderTop'><div class='galleryImageHolder'>
+                                    <a href='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic25.jpg' rel='lightbox[gallerystyleresult]' onclick='if (!window.lightboxLoaded) return false'>
+                                    <img src='http://rosebid-assets.s3.amazonaws.com/stylepicker/pic25thumb.jpg' class='galleryImage' style='position:absolute;border:0;width:100%;top:0%;left:0%'>
+                                </a></div></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-grid" style="margin-left:25px;">
+                        <div class="uk-width-1-2">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-4"><b>Pinterest:</b></div>
+                                <div class="uk-width-3-4"><a href="http://www.pinterest.com/amiatead/bouquets/" style="font-size:15px;">pinterest.com/amiatead/bouquets/</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                            &nbsp;
+                        </div>
+                    </div>
+
+                    <div class="uk-grid uk-vertical-align" data-uk-grid-match>
+                        <div class="uk-width-3-5">
+                            &nbsp;
+                        </div>
+                        <div class="uk-width-2-5" style="position:relative;">
+
+<!-- UPDATE LINK -->
+                            <a class="wsite-button-red" href="request-confirmation.html" style="position:absolute;right:0;margin:0 auto;top:11%">
+                                <span class="wsite-button-inner">Submit Request</span>
+                            </a>
+<!-- UPDATE LINK -->
+
+                        </div>
+                    </div>
+
+                    <br><br>
+
+
+					<!-- END CONTENT HERE -->
+					
+				</div>
+				<div id="content-bottom-padding"></div>
+	        </div><!-- end container -->
+	    </div><!-- end main-wrap -->
